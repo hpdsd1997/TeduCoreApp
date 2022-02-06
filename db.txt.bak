@@ -1,0 +1,111 @@
+Product
+	ID,
+	Name,
+	Price,
+	PricePromotion,
+	URL,
+	Image,
+	Quantity,
+	Color,
+	Size,
+	SeoTitle,
+	SeoDescription,
+	Description,
+	IsHot,
+	IsSale,
+	Status,
+	CountView,
+	SortOrder
+CategoryProduct
+	Id,
+	Name,
+	CategoryParent,
+	SeoTitle,
+	SeoDescription,
+	Description,
+	Status,
+	SortOrder
+Slide
+	Id,
+	URL,
+	Title,
+	Status,
+	SortOrder
+Blog
+	Id,
+	Ttile,
+	ByName,
+	Content,
+	DateCreated,
+	DateUpdated,
+	Status,
+	SortOrder
+Brand
+	Id,
+	Name,
+	Image
+Language
+	Id,
+	Name,
+	Image,
+	SortOrder
+Currency
+	Id,
+	Name,
+	Image,
+	SortOrder
+Advertimise
+	Id,
+	Title,
+	Description
+	Image,
+	SortOrder
+User
+	Id,
+	FirstName,
+	LastName,
+	FulleName,
+	Address,
+	City,
+	Email,
+	Phone
+Order
+	Id,
+	OrderNumber,
+	OrderDate,
+	OrderStatus,
+	Total,
+	SortOrder,
+	Status
+Bill
+	Id,
+	BillNumber,
+	Total,
+	Status,
+	Customer
+	Address,
+	Phone
+BillDetail
+	Id,
+	Product,
+	Price,
+	Quantity,
+	Total
+Page
+	Id,
+	Name,
+	URL
+Rate
+	Id,
+	NameTypeNumber,
+	NameTypeString
+Tags
+	Id,
+	Name,
+	URL
+	TypeTag
+Comment
+	Id,
+	Customer,
+	Content,
+	DateCreated
