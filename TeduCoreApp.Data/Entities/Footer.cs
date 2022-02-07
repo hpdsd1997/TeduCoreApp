@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 using TeduCoreApp.Infrastructure.SharedKernel;
 
 namespace TeduCoreApp.Data.Entities
 {
-    public class Tag : DomainEntity<string>
+    [Table("Footers")]
+    public class Footer : DomainEntity<string>
     {
-        [MaxLength(50)]
-        [Required]
-        public string Name { get; set; }
 
-        [MaxLength(50)]
         [Required]
-        public string Type { get; set; }
+        public string Content { set; get; }
     }
 }
