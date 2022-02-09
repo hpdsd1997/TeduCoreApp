@@ -8,11 +8,11 @@ using TeduCoreApp.Data.Entities;
 
 namespace TeduCoreApp.Data.EF.Configurations
 {
-    public class AdvertistmentPositionConfiguration : DbEntityConfiguration<AdvertistmentPosition>
+    public class AdvertistmentPageConfiguration : DbEntityConfiguration<AdvertistmentPage>
     {
-        public override void Configure(EntityTypeBuilder<AdvertistmentPosition> entity)
+        public override void Configure(EntityTypeBuilder<AdvertistmentPage> entity)
         {
-            entity.Property(c => c.Id).IsRequired().HasColumnType("varchar(20)");
+            entity.Property(c => c.Id).HasMaxLength(20).IsRequired().HasColumnType("varchar(20)");
             // etc.
         }
     }

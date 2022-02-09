@@ -10,11 +10,11 @@ namespace TeduCoreApp.Data.Entities
     [Table("Permissions")]
     public class Permission : DomainEntity<int>
     {
-        [StringLength(450)]
         [Required]
-        public string RoleId { get; set; }
+        public Guid RoleId { get; set; }
 
         [StringLength(128)]
+        [Column(TypeName = "varchar(128)")]
         [Required]
         public string FunctionId { get; set; }
 
@@ -23,7 +23,6 @@ namespace TeduCoreApp.Data.Entities
 
         public bool CanUpdate { set; get; }
         public bool CanDelete { set; get; }
-
 
         [ForeignKey("RoleId")]
         public virtual AppRole AppRole { get; set; }
