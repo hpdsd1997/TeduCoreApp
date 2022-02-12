@@ -1,0 +1,1393 @@
+2022-02-12T22:40:02.1213461+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T22:40:02.4715732+07:00  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T22:40:02.5108591+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T22:40:02.5453082+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2022-02-12T22:40:02.5916286+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2022-02-12T22:40:02.5999097+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2022-02-12T22:40:02.6616336+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2022-02-12T22:40:02.7204721+07:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2022-02-12T22:40:02.7521258+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2022-02-12T22:40:02.7911373+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2022-02-12T22:40:02.8785883+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T22:40:02.9111983+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T22:40:02.9389454+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T22:40:03.3719100+07:00 0HMFE7NNRFLRG:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:43783/  0 (ca22a1cb)
+2022-02-12T22:40:03.3719099+07:00 0HMFE7NNRFLRF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/   (ca22a1cb)
+2022-02-12T22:40:03.4110394+07:00 0HMFE7NNRFLRG:00000001 [INF] Request finished in 78.1176ms 200  (791a596a)
+2022-02-12T22:40:03.4499546+07:00 0HMFE7NNRFLRF:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T22:40:03.5398284+07:00 0HMFE7NNRFLRF:00000001 [INF] Executed DbCommand ("50"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2022-02-12T22:40:03.6107929+07:00 0HMFE7NNRFLRF:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2022-02-12T22:40:03.6642058+07:00 0HMFE7NNRFLRF:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T22:40:03.6893191+07:00 0HMFE7NNRFLRF:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2022-02-12T22:40:03.7204570+07:00 0HMFE7NNRFLRF:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2022-02-12T22:40:03.7315446+07:00 0HMFE7NNRFLRF:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T22:40:03.7580161+07:00 0HMFE7NNRFLRF:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:40:03.9824761+07:00 0HMFE7NNRFLRF:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-12T22:40:04.0185098+07:00 0HMFE7NNRFLRF:00000001 [INF] Executing action method "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:40:06.9951539+07:00 0HMFE7NNRFLRF:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2022-02-12T22:40:07.6156161+07:00 0HMFE7NNRFLRF:00000001 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 3632.3609ms (afa2e885)
+2022-02-12T22:40:07.6242941+07:00 0HMFE7NNRFLRF:00000001 [INF] Request finished in 4317.3412ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T22:40:07.6813017+07:00 0HMFE7NNRFLRG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2022-02-12T22:40:07.6911953+07:00 0HMFE7NNRFLRG:00000002 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2022-02-12T22:40:07.7018518+07:00 0HMFE7NNRFLRG:00000002 [INF] Request finished in 44.961ms 304 text/css (791a596a)
+2022-02-12T22:40:07.7505407+07:00 0HMFE7NNRFLRF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/jquery/dist/jquery.js   (ca22a1cb)
+2022-02-12T22:40:07.8164622+07:00 0HMFE7NNRFLRG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2022-02-12T22:40:07.8405722+07:00 0HMFE7NNRFLRF:00000002 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2022-02-12T22:40:07.9106084+07:00 0HMFE7NNRFLRG:00000003 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2022-02-12T22:40:07.9330507+07:00 0HMFE7NNRFLRF:00000002 [INF] Request finished in 140.1052ms 304 application/javascript (791a596a)
+2022-02-12T22:40:08.0007521+07:00 0HMFE7NNRFLRH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2022-02-12T22:40:08.0025939+07:00 0HMFE7NNRFLRG:00000003 [INF] Request finished in 183.1569ms 304 application/javascript (791a596a)
+2022-02-12T22:40:08.0293985+07:00 0HMFE7NNRFLRH:00000001 [INF] The file "/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" was not modified (f1f8d725)
+2022-02-12T22:40:08.0343066+07:00 0HMFE7NNRFLRH:00000001 [INF] Request finished in 96.3345ms 304 font/woff2 (791a596a)
+2022-02-12T22:40:11.0994190+07:00 0HMFE7NNRFLRF:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44366/admin   (ca22a1cb)
+2022-02-12T22:40:11.1047964+07:00 0HMFE7NNRFLRF:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:40:11.1345622+07:00 0HMFE7NNRFLRF:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:40:11.4794782+07:00 0HMFE7NNRFLRF:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2022-02-12T22:40:11.5080447+07:00 0HMFE7NNRFLRF:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 395.6961ms (afa2e885)
+2022-02-12T22:40:11.5137465+07:00 0HMFE7NNRFLRF:00000003 [INF] Request finished in 413.7249ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T22:40:11.5900194+07:00 0HMFE7NNRFLRG:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/nprogress/nprogress.css   (ca22a1cb)
+2022-02-12T22:40:11.8070669+07:00 0HMFE7NNRFLRI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2022-02-12T22:40:11.8553531+07:00 0HMFE7NNRFLRJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2022-02-12T22:40:11.8925211+07:00 0HMFE7NNRFLRL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/animate.css/animate.css   (ca22a1cb)
+2022-02-12T22:40:11.8996275+07:00 0HMFE7NNRFLRG:00000004 [INF] The file "/lib/nprogress/nprogress.css" was not modified (f1f8d725)
+2022-02-12T22:40:11.9709400+07:00 0HMFE7NNRFLRF:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2022-02-12T22:40:11.9949206+07:00 0HMFE7NNRFLRG:00000004 [INF] Request finished in 355.244ms 304 text/css (791a596a)
+2022-02-12T22:40:12.0210867+07:00 0HMFE7NNRFLRK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2022-02-12T22:40:12.0368163+07:00 0HMFE7NNRFLRM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2022-02-12T22:40:12.0484329+07:00 0HMFE7NNRFLRH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2022-02-12T22:40:12.1673664+07:00 0HMFE7NNRFLRJ:00000001 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.js" was not modified (f1f8d725)
+2022-02-12T22:40:12.2956570+07:00 0HMFE7NNRFLRM:00000001 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.css" was not modified (f1f8d725)
+2022-02-12T22:40:12.3110554+07:00 0HMFE7NNRFLRL:00000001 [INF] The file "/lib/animate.css/animate.css" was not modified (f1f8d725)
+2022-02-12T22:40:12.3312158+07:00 0HMFE7NNRFLRI:00000001 [INF] The file "/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" was not modified (f1f8d725)
+2022-02-12T22:40:12.3449450+07:00 0HMFE7NNRFLRJ:00000001 [INF] Request finished in 613.5608ms 304 application/javascript (791a596a)
+2022-02-12T22:40:12.3854760+07:00 0HMFE7NNRFLRH:00000002 [INF] The file "/lib/font-awesome/css/font-awesome.css" was not modified (f1f8d725)
+2022-02-12T22:40:12.4254607+07:00 0HMFE7NNRFLRF:00000004 [INF] The file "/lib/notifyjs/dist/notify.js" was not modified (f1f8d725)
+2022-02-12T22:40:12.4312915+07:00 0HMFE7NNRFLRK:00000001 [INF] The file "/lib/jquery-validation/dist/jquery.validate.js" was not modified (f1f8d725)
+2022-02-12T22:40:12.4608534+07:00 0HMFE7NNRFLRQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/app/controllers/login/index.js   (ca22a1cb)
+2022-02-12T22:40:12.5653997+07:00 0HMFE7NNRFLRL:00000001 [INF] Request finished in 756.7506ms 304 text/css (791a596a)
+2022-02-12T22:40:12.6208760+07:00 0HMFE7NNRFLRM:00000001 [INF] Request finished in 741.6503ms 304 text/css (791a596a)
+2022-02-12T22:40:12.6460702+07:00 0HMFE7NNRFLRH:00000002 [INF] Request finished in 834.4362ms 304 text/css (791a596a)
+2022-02-12T22:40:12.6742026+07:00 0HMFE7NNRFLRO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2022-02-12T22:40:12.7925456+07:00 0HMFE7NNRFLRO:00000001 [INF] The file "/lib/jquery-validation/localization/messages_vi.js" was not modified (f1f8d725)
+2022-02-12T22:40:12.8181836+07:00 0HMFE7NNRFLRI:00000001 [INF] Request finished in 778.0943ms 304 application/javascript (791a596a)
+2022-02-12T22:40:12.8779369+07:00 0HMFE7NNRFLRO:00000001 [INF] Request finished in 258.6908ms 304 application/javascript (791a596a)
+2022-02-12T22:40:12.9388373+07:00 0HMFE7NNRFLRR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/app/shared/tedu.js   (ca22a1cb)
+2022-02-12T22:40:12.9675759+07:00 0HMFE7NNRFLRQ:00000001 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2022-02-12T22:40:12.9960871+07:00 0HMFE7NNRFLRF:00000004 [INF] Request finished in 875.6592ms 304 application/javascript (791a596a)
+2022-02-12T22:40:12.9979493+07:00 0HMFE7NNRFLRN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/admin-side/css/custom.css   (ca22a1cb)
+2022-02-12T22:40:13.0273658+07:00 0HMFE7NNRFLRK:00000001 [INF] Request finished in 870.1625ms 304 application/javascript (791a596a)
+2022-02-12T22:40:13.0957167+07:00 0HMFE7NNRFLRQ:00000001 [INF] Request finished in 758.0892ms 304 application/javascript (791a596a)
+2022-02-12T22:40:13.0987888+07:00 0HMFE7NNRFLRN:00000001 [INF] The file "/admin-side/css/custom.css" was not modified (f1f8d725)
+2022-02-12T22:40:13.1349415+07:00 0HMFE7NNRFLRP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2022-02-12T22:40:13.1587914+07:00 0HMFE7NNRFLRN:00000001 [INF] Request finished in 278.6058ms 304 text/css (791a596a)
+2022-02-12T22:40:13.1870425+07:00 0HMFE7NNRFLRP:00000001 [INF] The file "/lib/jquery-validation/dist/additional-methods.js" was not modified (f1f8d725)
+2022-02-12T22:40:13.2373851+07:00 0HMFE7NNRFLRP:00000001 [INF] Request finished in 337.5347ms 304 application/javascript (791a596a)
+2022-02-12T22:40:13.2467134+07:00 0HMFE7NNRFLRG:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2022-02-12T22:40:13.2507317+07:00 0HMFE7NNRFLRG:00000005 [INF] The file "/lib/font-awesome/fonts/fontawesome-webfont.woff2" was not modified (f1f8d725)
+2022-02-12T22:40:13.2549920+07:00 0HMFE7NNRFLRG:00000005 [INF] Request finished in 90.3908ms 304 font/woff2 (791a596a)
+2022-02-12T22:40:13.2593391+07:00 0HMFE7NNRFLRR:00000001 [INF] The file "/app/shared/tedu.js" was not modified (f1f8d725)
+2022-02-12T22:40:13.2651253+07:00 0HMFE7NNRFLRR:00000001 [INF] Request finished in 356.1092ms 304 application/javascript (791a596a)
+2022-02-12T22:40:14.8507722+07:00 0HMFE7NNRFLRJ:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44366/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2022-02-12T22:40:14.8543698+07:00 0HMFE7NNRFLRJ:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:40:14.9235821+07:00 0HMFE7NNRFLRJ:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:40:14.9373302+07:00 0HMFE7NNRFLRJ:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T22:40:14.9485115+07:00 0HMFE7NNRFLRJ:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2022-02-12T22:40:14.9893471+07:00 0HMFE7NNRFLRJ:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2022-02-12T22:40:14.9971723+07:00 0HMFE7NNRFLRJ:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T22:40:15.0033891+07:00 0HMFE7NNRFLRJ:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2022-02-12T22:40:15.0098862+07:00 0HMFE7NNRFLRJ:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2022-02-12T22:40:15.0170787+07:00 0HMFE7NNRFLRJ:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T22:40:15.0238128+07:00 0HMFE7NNRFLRJ:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2022-02-12T22:40:15.0277611+07:00 0HMFE7NNRFLRJ:00000002 [INF] User logged in. (fdce0db4)
+2022-02-12T22:40:15.0352373+07:00 0HMFE7NNRFLRJ:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2022-02-12T22:40:15.0744006+07:00 0HMFE7NNRFLRJ:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 183.2592ms (afa2e885)
+2022-02-12T22:40:15.0799710+07:00 0HMFE7NNRFLRJ:00000002 [INF] Request finished in 229.3235ms 200 application/json; charset=utf-8 (791a596a)
+2022-02-12T22:40:15.0949901+07:00 0HMFE7NNRFLRM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin/Home/Index   (ca22a1cb)
+2022-02-12T22:40:15.1005964+07:00 0HMFE7NNRFLRM:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:40:15.1061318+07:00 0HMFE7NNRFLRM:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:40:15.2141822+07:00 0HMFE7NNRFLRM:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2022-02-12T22:40:15.6559987+07:00 0HMFE7NNRFLRM:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 549.6425ms (afa2e885)
+2022-02-12T22:40:15.6610402+07:00 0HMFE7NNRFLRM:00000002 [INF] Request finished in 566.7816ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T22:40:15.7360217+07:00 0HMFE7NNRFLRH:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/nprogress/nprogress.js   (ca22a1cb)
+2022-02-12T22:40:15.8380421+07:00 0HMFE7NNRFLRO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/admin-side/js/custom.js   (ca22a1cb)
+2022-02-12T22:40:16.0305778+07:00 0HMFE7NNRFLRL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/admin-side/images/img.jpg   (ca22a1cb)
+2022-02-12T22:40:16.0394316+07:00 0HMFE7NNRFLRH:00000003 [INF] The file "/lib/nprogress/nprogress.js" was not modified (f1f8d725)
+2022-02-12T22:40:16.0725329+07:00 0HMFE7NNRFLRP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2022-02-12T22:40:16.1023200+07:00 0HMFE7NNRFLRH:00000003 [INF] Request finished in 372.1125ms 304 application/javascript (791a596a)
+2022-02-12T22:40:16.1280393+07:00 0HMFE7NNRFLRK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2022-02-12T22:40:16.1757458+07:00 0HMFE7NNRFLRN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/moment/moment.js   (ca22a1cb)
+2022-02-12T22:40:16.1871822+07:00 0HMFE7NNRFLRF:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2022-02-12T22:40:16.2153011+07:00 0HMFE7NNRFLRI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2022-02-12T22:40:16.2491862+07:00 0HMFE7NNRFLRQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2022-02-12T22:40:16.2732564+07:00 0HMFE7NNRFLRO:00000002 [INF] The file "/admin-side/js/custom.js" was not modified (f1f8d725)
+2022-02-12T22:40:16.3992599+07:00 0HMFE7NNRFLRF:00000005 [INF] The file "/lib/fastclick/lib/fastclick.js" was not modified (f1f8d725)
+2022-02-12T22:40:16.4600091+07:00 0HMFE7NNRFLRO:00000002 [INF] Request finished in 554.9926ms 304 application/javascript (791a596a)
+2022-02-12T22:40:16.4775919+07:00 0HMFE7NNRFLRQ:00000002 [INF] The file "/lib/jquery-sparkline/dist/jquery.sparkline.js" was not modified (f1f8d725)
+2022-02-12T22:40:16.5069570+07:00 0HMFE7NNRFLRP:00000002 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.js" was not modified (f1f8d725)
+2022-02-12T22:40:16.5308147+07:00 0HMFE7NNRFLRL:00000002 [INF] The file "/admin-side/images/img.jpg" was not modified (f1f8d725)
+2022-02-12T22:40:16.5342540+07:00 0HMFE7NNRFLRK:00000002 [INF] The file "/lib/Chart.js/dist/Chart.js" was not modified (f1f8d725)
+2022-02-12T22:40:16.6157540+07:00 0HMFE7NNRFLRL:00000002 [INF] Request finished in 839.6453ms 304 image/jpeg (791a596a)
+2022-02-12T22:40:16.6400001+07:00 0HMFE7NNRFLRN:00000002 [INF] The file "/lib/moment/moment.js" was not modified (f1f8d725)
+2022-02-12T22:40:16.6636721+07:00 0HMFE7NNRFLRI:00000002 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.css" was not modified (f1f8d725)
+2022-02-12T22:40:16.6919391+07:00 0HMFE7NNRFLRF:00000005 [INF] Request finished in 706.3461ms 304 application/javascript (791a596a)
+2022-02-12T22:40:16.7346262+07:00 0HMFE7NNRFLRP:00000002 [INF] Request finished in 788.5584ms 304 application/javascript (791a596a)
+2022-02-12T22:40:16.7841135+07:00 0HMFE7NNRFLRI:00000002 [INF] Request finished in 972.0515ms 304 text/css (791a596a)
+2022-02-12T22:40:16.8096166+07:00 0HMFE7NNRFLRN:00000002 [INF] Request finished in 919.7097ms 304 application/javascript (791a596a)
+2022-02-12T22:40:16.8324817+07:00 0HMFE7NNRFLRK:00000002 [INF] Request finished in 839.4961ms 304 application/javascript (791a596a)
+2022-02-12T22:40:16.8546359+07:00 0HMFE7NNRFLRQ:00000002 [INF] Request finished in 759.0698ms 304 application/javascript (791a596a)
+2022-02-12T22:41:18.4737654+07:00 0HMFE7NNRFLRS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin/Home/Index   (ca22a1cb)
+2022-02-12T22:41:18.4774599+07:00 0HMFE7NNRFLRS:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:41:18.4812701+07:00 0HMFE7NNRFLRS:00000001 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:41:18.4851154+07:00 0HMFE7NNRFLRS:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2022-02-12T22:41:18.4900555+07:00 0HMFE7NNRFLRS:00000001 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 8.3072ms (afa2e885)
+2022-02-12T22:41:18.4950089+07:00 0HMFE7NNRFLRS:00000001 [INF] Request finished in 19.9771ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T22:41:18.6500275+07:00 0HMFE7NNRFLRS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/favicon.ico   (ca22a1cb)
+2022-02-12T22:41:18.6563332+07:00 0HMFE7NNRFLRS:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2022-02-12T22:41:18.6768735+07:00 0HMFE7NNRFLRS:00000002 [INF] Request finished in 24.815ms 200 image/x-icon (791a596a)
+2022-02-12T22:41:21.0252831+07:00 0HMFE7NNRFLRS:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin/Home/Index   (ca22a1cb)
+2022-02-12T22:41:21.0294160+07:00 0HMFE7NNRFLRS:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:41:21.0332719+07:00 0HMFE7NNRFLRS:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:41:21.0376011+07:00 0HMFE7NNRFLRS:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2022-02-12T22:41:21.0428734+07:00 0HMFE7NNRFLRS:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 8.7237ms (afa2e885)
+2022-02-12T22:41:21.0470608+07:00 0HMFE7NNRFLRS:00000003 [INF] Request finished in 25.2616ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T22:41:53.1644989+07:00 0HMFE7NNRFLRS:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin/Home/Index   (ca22a1cb)
+2022-02-12T22:41:53.1694866+07:00 0HMFE7NNRFLRS:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:41:53.1739298+07:00 0HMFE7NNRFLRS:00000004 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:41:53.1782093+07:00 0HMFE7NNRFLRS:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2022-02-12T22:42:54.6990320+07:00 0HMFE7NNRFLRS:00000004 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 61524.8213ms (afa2e885)
+2022-02-12T22:42:54.7039510+07:00 0HMFE7NNRFLRS:00000004 [INF] Request finished in 61539.3262ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T22:43:00.2370190+07:00 0HMFE7NNRFLRS:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin/Home/login.html   (ca22a1cb)
+2022-02-12T22:43:00.2416196+07:00 0HMFE7NNRFLRS:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:43:00.2452144+07:00 0HMFE7NNRFLRS:00000005 [INF] Request finished in 9.4189ms 404  (791a596a)
+2022-02-12T22:43:02.1766601+07:00 0HMFE7NNRFLRS:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin/Home/login.html   (ca22a1cb)
+2022-02-12T22:43:02.1811508+07:00 0HMFE7NNRFLRS:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:43:02.1851865+07:00 0HMFE7NNRFLRS:00000006 [INF] Request finished in 9.093ms 404  (791a596a)
+2022-02-12T22:43:06.0182245+07:00 0HMFE7NNRFLRS:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin   (ca22a1cb)
+2022-02-12T22:43:06.0242317+07:00 0HMFE7NNRFLRS:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:43:06.0299260+07:00 0HMFE7NNRFLRS:00000007 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:43:06.0344598+07:00 0HMFE7NNRFLRS:00000007 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2022-02-12T22:43:06.0402286+07:00 0HMFE7NNRFLRS:00000007 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 11.2159ms (afa2e885)
+2022-02-12T22:43:06.0454349+07:00 0HMFE7NNRFLRS:00000007 [INF] Request finished in 28.5904ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T22:43:16.5182415+07:00 0HMFE7NNRFLRS:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:44366/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2022-02-12T22:43:16.5452659+07:00 0HMFE7NNRFLRS:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:43:16.5508000+07:00 0HMFE7NNRFLRS:00000008 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:43:16.5543217+07:00 0HMFE7NNRFLRS:00000008 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T22:43:16.5607330+07:00 0HMFE7NNRFLRS:00000008 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2022-02-12T22:43:16.5729525+07:00 0HMFE7NNRFLRS:00000008 [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2022-02-12T22:43:16.5800128+07:00 0HMFE7NNRFLRS:00000008 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T22:43:16.5867875+07:00 0HMFE7NNRFLRS:00000008 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2022-02-12T22:43:16.5919823+07:00 0HMFE7NNRFLRS:00000008 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2022-02-12T22:43:16.5965624+07:00 0HMFE7NNRFLRS:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T22:43:16.5998884+07:00 0HMFE7NNRFLRS:00000008 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2022-02-12T22:43:16.6034414+07:00 0HMFE7NNRFLRS:00000008 [INF] User logged in. (fdce0db4)
+2022-02-12T22:43:16.6067726+07:00 0HMFE7NNRFLRS:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2022-02-12T22:43:16.6103438+07:00 0HMFE7NNRFLRS:00000008 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 61.4803ms (afa2e885)
+2022-02-12T22:43:16.6142581+07:00 0HMFE7NNRFLRS:00000008 [INF] Request finished in 96.3781ms 200 application/json; charset=utf-8 (791a596a)
+2022-02-12T22:43:16.6312354+07:00 0HMFE7NNRFLRS:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin/Home/Index   (ca22a1cb)
+2022-02-12T22:43:16.6553369+07:00 0HMFE7NNRFLRS:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:43:16.6601160+07:00 0HMFE7NNRFLRS:00000009 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:43:16.6632057+07:00 0HMFE7NNRFLRS:00000009 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2022-02-12T22:44:19.4023485+07:00 0HMFE7NNRFLRS:00000009 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 62742.5922ms (afa2e885)
+2022-02-12T22:44:19.4067384+07:00 0HMFE7NNRFLRS:00000009 [INF] Request finished in 62776.1065ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T22:44:38.0091714+07:00 0HMFE7NNRFLRS:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin   (ca22a1cb)
+2022-02-12T22:44:38.0218977+07:00 0HMFE7NNRFLRS:0000000A [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:44:38.0816167+07:00 0HMFE7NNRFLRS:0000000A [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2022-02-12T22:44:38.2354568+07:00 0HMFE7NNRFLRS:0000000A [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 90.4415ms (afa2e885)
+2022-02-12T22:44:38.2694002+07:00 0HMFE7NNRFLRS:0000000A [INF] Request finished in 249.6657ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T22:44:38.3570641+07:00 0HMFE7NNRFLRS:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2022-02-12T22:44:38.5379418+07:00 0HMFE7NNRFLRV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2022-02-12T22:44:38.7467155+07:00 0HMFE7NNRFLRS:0000000B [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2022-02-12T22:44:38.7629684+07:00 0HMFE7NNRFLS0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2022-02-12T22:44:38.7907333+07:00 0HMFE7NNRFLS2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2022-02-12T22:44:38.9459939+07:00 0HMFE7NNRFLS5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/jquery/dist/jquery.js   (ca22a1cb)
+2022-02-12T22:44:39.0155532+07:00 0HMFE7NNRFLRU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2022-02-12T22:44:39.0400025+07:00 0HMFE7NNRFLRS:0000000B [INF] Request finished in 441.5909ms 200 application/javascript (791a596a)
+2022-02-12T22:44:39.2142382+07:00 0HMFE7NNRFLS1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2022-02-12T22:44:39.4538662+07:00 0HMFE7NNRFLRT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/nprogress/nprogress.css   (ca22a1cb)
+2022-02-12T22:44:39.5526139+07:00 0HMFE7NNRFLS6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/admin-side/css/custom.css   (ca22a1cb)
+2022-02-12T22:44:39.5956283+07:00 0HMFE7NNRFLRU:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/notify.js"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\lib\notifyjs\dist\notify.js"' (27b0a520)
+2022-02-12T22:44:39.6546739+07:00 0HMFE7NNRFLS0:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2022-02-12T22:44:39.6786657+07:00 0HMFE7NNRFLRT:00000001 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.css"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\lib\nprogress\nprogress.css"' (27b0a520)
+2022-02-12T22:44:39.6971107+07:00 0HMFE7NNRFLS2:00000001 [INF] Sending file. Request path: '"/lib/font-awesome/css/font-awesome.css"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\lib\font-awesome\css\font-awesome.css"' (27b0a520)
+2022-02-12T22:44:39.7083785+07:00 0HMFE7NNRFLS1:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2022-02-12T22:44:39.7549950+07:00 0HMFE7NNRFLS6:00000001 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2022-02-12T22:44:39.7736038+07:00 0HMFE7NNRFLS5:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2022-02-12T22:44:39.7953814+07:00 0HMFE7NNRFLS7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2022-02-12T22:44:39.9707995+07:00 0HMFE7NNRFLRV:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2022-02-12T22:44:40.0117197+07:00 0HMFE7NNRFLS8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/animate.css/animate.css   (ca22a1cb)
+2022-02-12T22:44:40.1068683+07:00 0HMFE7NNRFLS0:00000001 [INF] Request finished in 1248.2335ms 200 text/css (791a596a)
+2022-02-12T22:44:40.1257445+07:00 0HMFE7NNRFLS7:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2022-02-12T22:44:40.1408557+07:00 0HMFE7NNRFLS9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/app/controllers/login/index.js   (ca22a1cb)
+2022-02-12T22:44:40.1618331+07:00 0HMFE7NNRFLRT:00000001 [INF] Request finished in 1335.4135ms 200 text/css (791a596a)
+2022-02-12T22:44:40.2561363+07:00 0HMFE7NNRFLS2:00000001 [INF] Request finished in 1295.4568ms 200 text/css (791a596a)
+2022-02-12T22:44:40.3015774+07:00 0HMFE7NNRFLS1:00000001 [INF] Request finished in 1336.7279ms 200 application/javascript (791a596a)
+2022-02-12T22:44:40.3502094+07:00 0HMFE7NNRFLS8:00000001 [INF] Sending file. Request path: '"/lib/animate.css/animate.css"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\lib\animate.css\animate.css"' (27b0a520)
+2022-02-12T22:44:40.4083994+07:00 0HMFE7NNRFLS3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/app/shared/tedu.js   (ca22a1cb)
+2022-02-12T22:44:40.4676251+07:00 0HMFE7NNRFLRV:00000001 [INF] Request finished in 1700.2324ms 200 application/javascript (791a596a)
+2022-02-12T22:44:40.5296198+07:00 0HMFE7NNRFLS7:00000001 [INF] Request finished in 660.5677ms 200 application/javascript (791a596a)
+2022-02-12T22:44:40.5587520+07:00 0HMFE7NNRFLS9:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2022-02-12T22:44:40.5917475+07:00 0HMFE7NNRFLS4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2022-02-12T22:44:40.6083198+07:00 0HMFE7NNRFLSA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2022-02-12T22:44:40.6852955+07:00 0HMFE7NNRFLS3:00000001 [INF] Sending file. Request path: '"/app/shared/tedu.js"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\app\shared\tedu.js"' (27b0a520)
+2022-02-12T22:44:40.7954576+07:00 0HMFE7NNRFLS9:00000001 [INF] Request finished in 836.0821ms 200 application/javascript (791a596a)
+2022-02-12T22:44:40.8521333+07:00 0HMFE7NNRFLS6:00000001 [INF] Request finished in 2031.7272ms 200 text/css (791a596a)
+2022-02-12T22:44:40.8847885+07:00 0HMFE7NNRFLRU:00000001 [INF] Request finished in 2076.8026ms 200 application/javascript (791a596a)
+2022-02-12T22:44:40.9123545+07:00 0HMFE7NNRFLS8:00000001 [INF] Request finished in 857.7361ms 200 text/css (791a596a)
+2022-02-12T22:44:40.9741090+07:00 0HMFE7NNRFLS3:00000001 [INF] Request finished in 773.0392ms 200 application/javascript (791a596a)
+2022-02-12T22:44:41.0008651+07:00 0HMFE7NNRFLSA:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2022-02-12T22:44:41.0354439+07:00 0HMFE7NNRFLS4:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2022-02-12T22:44:41.0906591+07:00 0HMFE7NNRFLS4:00000001 [INF] Request finished in 685.398ms 200 application/javascript (791a596a)
+2022-02-12T22:44:41.1204626+07:00 0HMFE7NNRFLSA:00000001 [INF] Request finished in 688.0802ms 200 text/css (791a596a)
+2022-02-12T22:44:41.1305243+07:00 0HMFE7NNRFLS5:00000001 [INF] Request finished in 2419.071ms 200 application/javascript (791a596a)
+2022-02-12T22:44:41.4290472+07:00 0HMFE7NNRFLRS:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2022-02-12T22:44:41.4329970+07:00 0HMFE7NNRFLRS:0000000C [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2022-02-12T22:44:41.4438387+07:00 0HMFE7NNRFLRS:0000000C [INF] Request finished in 34.3634ms 200 font/woff2 (791a596a)
+2022-02-12T22:44:41.5999540+07:00 0HMFE7NNRFLS0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/favicon.ico   (ca22a1cb)
+2022-02-12T22:44:41.6046456+07:00 0HMFE7NNRFLS0:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2022-02-12T22:44:41.6149660+07:00 0HMFE7NNRFLS0:00000002 [INF] Request finished in 10.9969ms 200 image/x-icon (791a596a)
+2022-02-12T22:44:54.2199083+07:00 0HMFE7NNRFLRT:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44366/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2022-02-12T22:44:54.2281106+07:00 0HMFE7NNRFLRT:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:44:54.2374742+07:00 0HMFE7NNRFLRT:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T22:44:54.2504715+07:00 0HMFE7NNRFLRT:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2022-02-12T22:44:54.2676637+07:00 0HMFE7NNRFLRT:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2022-02-12T22:44:54.2766041+07:00 0HMFE7NNRFLRT:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T22:44:54.2830734+07:00 0HMFE7NNRFLRT:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2022-02-12T22:44:54.2891751+07:00 0HMFE7NNRFLRT:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2022-02-12T22:44:54.2950962+07:00 0HMFE7NNRFLRT:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T22:44:54.3001253+07:00 0HMFE7NNRFLRT:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2022-02-12T22:44:54.3033250+07:00 0HMFE7NNRFLRT:00000002 [INF] User logged in. (fdce0db4)
+2022-02-12T22:44:54.3074967+07:00 0HMFE7NNRFLRT:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2022-02-12T22:44:54.3122882+07:00 0HMFE7NNRFLRT:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 87.6408ms (afa2e885)
+2022-02-12T22:44:54.3166223+07:00 0HMFE7NNRFLRT:00000002 [INF] Request finished in 97.8314ms 200 application/json; charset=utf-8 (791a596a)
+2022-02-12T22:44:54.3289700+07:00 0HMFE7NNRFLS2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin/Home/Index   (ca22a1cb)
+2022-02-12T22:44:54.3341820+07:00 0HMFE7NNRFLS2:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:44:54.3387238+07:00 0HMFE7NNRFLS2:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:44:54.3437866+07:00 0HMFE7NNRFLS2:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2022-02-12T22:47:31.0495660+07:00 0HMFE7NNRFLS2:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T22:47:34.0605027+07:00 0HMFE7NNRFLS2:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 159719.9314ms (afa2e885)
+2022-02-12T22:47:34.2950945+07:00 0HMFE7NNRFLS2:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Missing map from TeduCoreApp.Data.Entities.Function to TeduCoreApp.Application.ViewModels.System.FunctionViewModel. Create using Mapper.CreateMap<Function, FunctionViewModel>.
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.CreateMapExpressionCore(ExpressionRequest request, Expression instanceParameter, IDictionary`2 typePairCount, LetPropertyMaps letPropertyMaps, TypeMap& typeMap)
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.CreateMapExpression(ExpressionRequest request, IDictionary`2 typePairCount, LetPropertyMaps letPropertyMaps)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.GetMapExpression(Type sourceType, Type destinationType, IDictionary`2 parameters, MemberInfo[] membersToExpand)
+   at AutoMapper.QueryableExtensions.ProjectionExpression.To[TResult](IDictionary`2 parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, Expression`1[] membersToExpand)
+   at TeduCoreApp.Application.Implementation.FunctionService.GetAll() in D:\TeduCoreApp\TeduCoreApp.Application\Implementation\FunctionService.cs:line 29
+   at TeduCoreApp.Areas.Admin.Components.SideBarViewComponent.<InvokeAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsyncCore>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.<InvokeCoreAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<<ExecuteAsync>b__25_6>d.MoveNext() in D:\TeduCoreApp\TeduCoreApp\Areas\Admin\Views\Shared\_Layout.cshtml:line 51
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.<SetOutputContentAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<ExecuteAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2022-02-12T22:47:34.4974098+07:00 0HMFE7NNRFLS2:00000002 [INF] Request finished in 160168.3837ms 500 text/html; charset=utf-8 (791a596a)
+2022-02-12T22:47:37.4576477+07:00 0HMFE7NNRFLS2:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin/Home/Index   (ca22a1cb)
+2022-02-12T22:47:37.4630651+07:00 0HMFE7NNRFLS2:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:47:37.4679440+07:00 0HMFE7NNRFLS2:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:47:37.4714107+07:00 0HMFE7NNRFLS2:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2022-02-12T22:47:40.4975213+07:00  [WRN] Heartbeat took longer than "00:00:01" at "02/12/2022 15:47:39 +00:00". (439152bf)
+2022-02-12T22:47:42.1261374+07:00 0HMFE7NNRFLS2:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T22:49:27.0891990+07:00 0HMFE7NNRFLS2:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 109621.7152ms (afa2e885)
+2022-02-12T22:49:27.2142911+07:00 0HMFE7NNRFLS2:00000003 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Missing map from TeduCoreApp.Data.Entities.Function to TeduCoreApp.Application.ViewModels.System.FunctionViewModel. Create using Mapper.CreateMap<Function, FunctionViewModel>.
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.CreateMapExpressionCore(ExpressionRequest request, Expression instanceParameter, IDictionary`2 typePairCount, LetPropertyMaps letPropertyMaps, TypeMap& typeMap)
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.CreateMapExpression(ExpressionRequest request, IDictionary`2 typePairCount, LetPropertyMaps letPropertyMaps)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Lazy`1.CreateValue()
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.GetMapExpression(Type sourceType, Type destinationType, IDictionary`2 parameters, MemberInfo[] membersToExpand)
+   at AutoMapper.QueryableExtensions.ProjectionExpression.To[TResult](IDictionary`2 parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, Expression`1[] membersToExpand)
+   at TeduCoreApp.Application.Implementation.FunctionService.GetAll() in D:\TeduCoreApp\TeduCoreApp.Application\Implementation\FunctionService.cs:line 29
+   at TeduCoreApp.Areas.Admin.Components.SideBarViewComponent.<InvokeAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsyncCore>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.<InvokeCoreAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<<ExecuteAsync>b__25_6>d.MoveNext() in D:\TeduCoreApp\TeduCoreApp\Areas\Admin\Views\Shared\_Layout.cshtml:line 51
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.<SetOutputContentAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<ExecuteAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2022-02-12T22:49:27.3905495+07:00 0HMFE7NNRFLS2:00000003 [INF] Request finished in 109934.6497ms 500 text/html; charset=utf-8 (791a596a)
+2022-02-12T22:55:27.7410456+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T22:55:28.0637622+07:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T22:55:28.1036732+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T22:55:28.1374942+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2022-02-12T22:55:28.1780050+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2022-02-12T22:55:28.2094306+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2022-02-12T22:55:28.2654127+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2022-02-12T22:55:28.3072568+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2022-02-12T22:55:28.3376516+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2022-02-12T22:55:28.3696730+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2022-02-12T22:55:28.4230361+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T22:55:28.4540263+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T22:55:28.4823979+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T22:55:28.8989520+07:00 0HMFE80BMEJUJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/   (ca22a1cb)
+2022-02-12T22:55:28.8989521+07:00 0HMFE80BMEJUK:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:43783/  0 (ca22a1cb)
+2022-02-12T22:55:28.9606149+07:00 0HMFE80BMEJUK:00000001 [INF] Request finished in 79.6345ms 200  (791a596a)
+2022-02-12T22:55:29.0081657+07:00 0HMFE80BMEJUJ:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:55:29.1692770+07:00 0HMFE80BMEJUJ:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-12T22:55:29.1804795+07:00 0HMFE80BMEJUJ:00000001 [INF] Executing action method "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:55:31.6556250+07:00 0HMFE80BMEJUJ:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2022-02-12T22:55:32.3089882+07:00 0HMFE80BMEJUJ:00000001 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 3143.9535ms (afa2e885)
+2022-02-12T22:55:32.3199041+07:00 0HMFE80BMEJUJ:00000001 [INF] Request finished in 3484.001ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T22:55:38.2989060+07:00 0HMFE80BMEJUK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/admin   (ca22a1cb)
+2022-02-12T22:55:38.3066669+07:00 0HMFE80BMEJUK:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:55:38.3160965+07:00 0HMFE80BMEJUK:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:55:38.5358110+07:00 0HMFE80BMEJUK:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2022-02-12T22:55:38.5633537+07:00 0HMFE80BMEJUK:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 248.7491ms (afa2e885)
+2022-02-12T22:55:38.5680210+07:00 0HMFE80BMEJUK:00000002 [INF] Request finished in 271.3552ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T22:55:40.5507381+07:00 0HMFE80BMEJUJ:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44366/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2022-02-12T22:55:40.5542255+07:00 0HMFE80BMEJUJ:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:55:40.6344786+07:00 0HMFE80BMEJUJ:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:55:40.6542043+07:00 0HMFE80BMEJUJ:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T22:55:40.7366790+07:00 0HMFE80BMEJUJ:00000002 [INF] Executed DbCommand ("40"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2022-02-12T22:55:40.8360602+07:00 0HMFE80BMEJUJ:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2022-02-12T22:55:40.8693854+07:00 0HMFE80BMEJUJ:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T22:55:40.8825993+07:00 0HMFE80BMEJUJ:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2022-02-12T22:55:40.9025012+07:00 0HMFE80BMEJUJ:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2022-02-12T22:55:40.9120358+07:00 0HMFE80BMEJUJ:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T22:55:40.9226688+07:00 0HMFE80BMEJUJ:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2022-02-12T22:55:40.9267148+07:00 0HMFE80BMEJUJ:00000002 [INF] User logged in. (fdce0db4)
+2022-02-12T22:55:40.9352893+07:00 0HMFE80BMEJUJ:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2022-02-12T22:55:40.9751127+07:00 0HMFE80BMEJUJ:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 381.8837ms (afa2e885)
+2022-02-12T22:55:40.9796943+07:00 0HMFE80BMEJUJ:00000002 [INF] Request finished in 429.8777ms 200 application/json; charset=utf-8 (791a596a)
+2022-02-12T22:55:40.9951122+07:00 0HMFE80BMEJUK:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin/Home/Index   (ca22a1cb)
+2022-02-12T22:55:40.9987610+07:00 0HMFE80BMEJUK:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:55:41.0048257+07:00 0HMFE80BMEJUK:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:55:41.1248825+07:00 0HMFE80BMEJUK:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2022-02-12T22:55:41.3212556+07:00 0HMFE80BMEJUK:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T22:55:41.4976685+07:00 0HMFE80BMEJUK:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 494.5782ms (afa2e885)
+2022-02-12T22:55:41.6745220+07:00 0HMFE80BMEJUK:00000003 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Missing map from TeduCoreApp.Data.Entities.Function to TeduCoreApp.Application.ViewModels.System.FunctionViewModel. Create using Mapper.CreateMap<Function, FunctionViewModel>.
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.CreateMapExpressionCore(ExpressionRequest request, Expression instanceParameter, IDictionary`2 typePairCount, LetPropertyMaps letPropertyMaps, TypeMap& typeMap)
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.CreateMapExpression(ExpressionRequest request, IDictionary`2 typePairCount, LetPropertyMaps letPropertyMaps)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.GetMapExpression(Type sourceType, Type destinationType, IDictionary`2 parameters, MemberInfo[] membersToExpand)
+   at AutoMapper.QueryableExtensions.ProjectionExpression.To[TResult](IDictionary`2 parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, Expression`1[] membersToExpand)
+   at TeduCoreApp.Application.Implementation.FunctionService.GetAll() in D:\TeduCoreApp\TeduCoreApp.Application\Implementation\FunctionService.cs:line 29
+   at TeduCoreApp.Areas.Admin.Components.SideBarViewComponent.<InvokeAsync>d__2.MoveNext() in D:\TeduCoreApp\TeduCoreApp\Areas\Admin\Components\SideBarViewComponent.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsyncCore>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.<InvokeCoreAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<<ExecuteAsync>b__25_6>d.MoveNext() in D:\TeduCoreApp\TeduCoreApp\Areas\Admin\Views\Shared\_Layout.cshtml:line 51
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.<SetOutputContentAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<ExecuteAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2022-02-12T22:55:41.9684623+07:00 0HMFE80BMEJUK:00000003 [INF] Request finished in 972.1788ms 500 text/html; charset=utf-8 (791a596a)
+2022-02-12T22:56:52.4786926+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T22:56:52.8348066+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T22:56:52.8756257+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T22:56:52.8942896+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2022-02-12T22:56:52.9184447+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2022-02-12T22:56:52.9468621+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2022-02-12T22:56:53.0130559+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2022-02-12T22:56:53.0573927+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2022-02-12T22:56:53.0709988+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2022-02-12T22:56:53.0856139+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2022-02-12T22:56:53.1374618+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T22:56:53.1923113+07:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T22:56:53.2212514+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T22:56:53.4805892+07:00 0HMFE814SV5HG:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:43783/  0 (ca22a1cb)
+2022-02-12T22:56:53.4805892+07:00 0HMFE814SV5HF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/   (ca22a1cb)
+2022-02-12T22:56:53.5379999+07:00 0HMFE814SV5HG:00000001 [INF] Request finished in 98.9807ms 200  (791a596a)
+2022-02-12T22:56:53.5862918+07:00 0HMFE814SV5HF:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:56:53.7851041+07:00 0HMFE814SV5HF:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-12T22:56:53.8179568+07:00 0HMFE814SV5HF:00000001 [INF] Executing action method "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:56:55.8082877+07:00 0HMFE814SV5HF:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2022-02-12T22:56:56.2198530+07:00 0HMFE814SV5HF:00000001 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 2457.7574ms (afa2e885)
+2022-02-12T22:56:56.2276367+07:00 0HMFE814SV5HF:00000001 [INF] Request finished in 2809.2071ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T22:57:05.5917590+07:00 0HMFE814SV5HG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/admin   (ca22a1cb)
+2022-02-12T22:57:05.5972580+07:00 0HMFE814SV5HG:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:57:05.6047139+07:00 0HMFE814SV5HG:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:57:05.9019300+07:00 0HMFE814SV5HG:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2022-02-12T22:57:05.9357169+07:00 0HMFE814SV5HG:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 331.1273ms (afa2e885)
+2022-02-12T22:57:05.9642521+07:00 0HMFE814SV5HG:00000002 [INF] Request finished in 348.681ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T22:57:07.0097322+07:00 0HMFE814SV5HF:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44366/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2022-02-12T22:57:07.0128384+07:00 0HMFE814SV5HF:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:57:07.0900813+07:00 0HMFE814SV5HF:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:57:07.1045765+07:00 0HMFE814SV5HF:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T22:57:07.1839587+07:00 0HMFE814SV5HF:00000002 [INF] Executed DbCommand ("31"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2022-02-12T22:57:07.2991779+07:00 0HMFE814SV5HF:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2022-02-12T22:57:07.3762534+07:00 0HMFE814SV5HF:00000002 [INF] Executed DbCommand ("7"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T22:57:07.4117653+07:00 0HMFE814SV5HF:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2022-02-12T22:57:07.4596032+07:00 0HMFE814SV5HF:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2022-02-12T22:57:07.4874708+07:00 0HMFE814SV5HF:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T22:57:07.4964774+07:00 0HMFE814SV5HF:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2022-02-12T22:57:07.5001853+07:00 0HMFE814SV5HF:00000002 [INF] User logged in. (fdce0db4)
+2022-02-12T22:57:07.5275039+07:00 0HMFE814SV5HF:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2022-02-12T22:57:07.5602354+07:00 0HMFE814SV5HF:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 517.2797ms (afa2e885)
+2022-02-12T22:57:07.5644531+07:00 0HMFE814SV5HF:00000002 [INF] Request finished in 555.0783ms 200 application/json; charset=utf-8 (791a596a)
+2022-02-12T22:57:07.5815384+07:00 0HMFE814SV5HG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin/Home/Index   (ca22a1cb)
+2022-02-12T22:57:07.6069929+07:00 0HMFE814SV5HG:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T22:57:07.6323901+07:00 0HMFE814SV5HG:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T22:57:07.7902117+07:00 0HMFE814SV5HG:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2022-02-12T22:57:07.9693209+07:00 0HMFE814SV5HG:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T22:57:08.1331365+07:00 0HMFE814SV5HG:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 498.5275ms (afa2e885)
+2022-02-12T22:57:08.3068400+07:00 0HMFE814SV5HG:00000003 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: Missing map from TeduCoreApp.Data.Entities.Function to TeduCoreApp.Application.ViewModels.System.FunctionViewModel. Create using Mapper.CreateMap<Function, FunctionViewModel>.
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.CreateMapExpressionCore(ExpressionRequest request, Expression instanceParameter, IDictionary`2 typePairCount, LetPropertyMaps letPropertyMaps, TypeMap& typeMap)
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.CreateMapExpression(ExpressionRequest request, IDictionary`2 typePairCount, LetPropertyMaps letPropertyMaps)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.GetMapExpression(Type sourceType, Type destinationType, IDictionary`2 parameters, MemberInfo[] membersToExpand)
+   at AutoMapper.QueryableExtensions.ProjectionExpression.To[TResult](IDictionary`2 parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, Expression`1[] membersToExpand)
+   at TeduCoreApp.Application.Implementation.FunctionService.GetAll() in D:\TeduCoreApp\TeduCoreApp.Application\Implementation\FunctionService.cs:line 29
+   at TeduCoreApp.Areas.Admin.Components.SideBarViewComponent.<InvokeAsync>d__2.MoveNext() in D:\TeduCoreApp\TeduCoreApp\Areas\Admin\Components\SideBarViewComponent.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsyncCore>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.<InvokeCoreAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<<ExecuteAsync>b__25_6>d.MoveNext() in D:\TeduCoreApp\TeduCoreApp\Areas\Admin\Views\Shared\_Layout.cshtml:line 51
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.<SetOutputContentAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<ExecuteAsync>d__25.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2022-02-12T22:57:08.4448988+07:00 0HMFE814SV5HG:00000003 [INF] Request finished in 864.7695ms 500 text/html; charset=utf-8 (791a596a)
+2022-02-12T23:00:17.5667364+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T23:00:17.9542459+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T23:00:18.0029746+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T23:00:18.0257485+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2022-02-12T23:00:18.0734081+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2022-02-12T23:00:18.1316517+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2022-02-12T23:00:18.2036258+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2022-02-12T23:00:18.2636293+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2022-02-12T23:00:18.3085531+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2022-02-12T23:00:18.3495971+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2022-02-12T23:00:18.4224086+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T23:00:18.4641385+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T23:00:18.4753887+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T23:00:18.8958409+07:00 0HMFE8323OT0G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/   (ca22a1cb)
+2022-02-12T23:00:18.8958408+07:00 0HMFE8323OT0H:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:43783/  0 (ca22a1cb)
+2022-02-12T23:00:18.9424020+07:00 0HMFE8323OT0H:00000001 [INF] Request finished in 84.3477ms 200  (791a596a)
+2022-02-12T23:00:18.9979709+07:00 0HMFE8323OT0G:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T23:00:19.1802633+07:00 0HMFE8323OT0G:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-12T23:00:19.1920016+07:00 0HMFE8323OT0G:00000001 [INF] Executing action method "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T23:00:21.0139144+07:00 0HMFE8323OT0G:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2022-02-12T23:00:21.4370133+07:00 0HMFE8323OT0G:00000001 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 2259.3142ms (afa2e885)
+2022-02-12T23:00:21.4452824+07:00 0HMFE8323OT0G:00000001 [INF] Request finished in 2615.2428ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T23:00:27.0945875+07:00 0HMFE8323OT0H:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/admin   (ca22a1cb)
+2022-02-12T23:00:27.1010375+07:00 0HMFE8323OT0H:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T23:00:27.1103770+07:00 0HMFE8323OT0H:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T23:00:27.3599841+07:00 0HMFE8323OT0H:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2022-02-12T23:00:27.3906745+07:00 0HMFE8323OT0H:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 281.787ms (afa2e885)
+2022-02-12T23:00:27.3959206+07:00 0HMFE8323OT0H:00000002 [INF] Request finished in 321.7913ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T23:00:28.4033409+07:00 0HMFE8323OT0G:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44366/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2022-02-12T23:00:28.4268623+07:00 0HMFE8323OT0G:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T23:00:28.4871799+07:00 0HMFE8323OT0G:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2022-02-12T23:00:28.5211769+07:00 0HMFE8323OT0G:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T23:00:28.5957400+07:00 0HMFE8323OT0G:00000002 [INF] Executed DbCommand ("27"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2022-02-12T23:00:28.6996721+07:00 0HMFE8323OT0G:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2022-02-12T23:00:28.7539750+07:00 0HMFE8323OT0G:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T23:00:28.7668649+07:00 0HMFE8323OT0G:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2022-02-12T23:00:28.8070234+07:00 0HMFE8323OT0G:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2022-02-12T23:00:28.8336440+07:00 0HMFE8323OT0G:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T23:00:28.8422421+07:00 0HMFE8323OT0G:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2022-02-12T23:00:28.8453656+07:00 0HMFE8323OT0G:00000002 [INF] User logged in. (fdce0db4)
+2022-02-12T23:00:28.8515028+07:00 0HMFE8323OT0G:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2022-02-12T23:00:28.8834362+07:00 0HMFE8323OT0G:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 424.8156ms (afa2e885)
+2022-02-12T23:00:28.9309788+07:00 0HMFE8323OT0G:00000002 [INF] Request finished in 485.0385ms 200 application/json; charset=utf-8 (791a596a)
+2022-02-12T23:00:28.9561657+07:00 0HMFE8323OT0H:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin/Home/Index   (ca22a1cb)
+2022-02-12T23:00:28.9806188+07:00 0HMFE8323OT0H:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T23:00:29.0060283+07:00 0HMFE8323OT0H:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T23:00:29.1532015+07:00 0HMFE8323OT0H:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2022-02-12T23:00:29.3280955+07:00 0HMFE8323OT0H:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T23:00:29.3825882+07:00 0HMFE8323OT0H:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2022-02-12T23:00:29.6182867+07:00 0HMFE8323OT0H:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 632.4677ms (afa2e885)
+2022-02-12T23:00:29.6235715+07:00 0HMFE8323OT0H:00000003 [INF] Request finished in 711.7883ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T23:08:13.7322476+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T23:08:14.0393147+07:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T23:08:14.0788377+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T23:08:14.1129597+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2022-02-12T23:08:14.1346230+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2022-02-12T23:08:14.1413289+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2022-02-12T23:08:14.2016726+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2022-02-12T23:08:14.2501849+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2022-02-12T23:08:14.2878543+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2022-02-12T23:08:14.3244295+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2022-02-12T23:08:14.3870145+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T23:08:14.4031129+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T23:08:14.4149655+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-12T23:08:14.8520691+07:00 0HMFE87FV1C02:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/   (ca22a1cb)
+2022-02-12T23:08:14.8506943+07:00 0HMFE87FV1C03:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:43783/  0 (ca22a1cb)
+2022-02-12T23:08:14.8906288+07:00 0HMFE87FV1C03:00000001 [INF] Request finished in 75.8435ms 200  (791a596a)
+2022-02-12T23:08:14.9364661+07:00 0HMFE87FV1C02:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T23:08:15.0860267+07:00 0HMFE87FV1C02:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-12T23:08:15.1178150+07:00 0HMFE87FV1C02:00000001 [INF] Executing action method "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T23:08:17.1703986+07:00 0HMFE87FV1C02:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2022-02-12T23:08:17.6505975+07:00 0HMFE87FV1C02:00000001 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 2566.0449ms (afa2e885)
+2022-02-12T23:08:17.6586137+07:00 0HMFE87FV1C02:00000001 [INF] Request finished in 2869.7544ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T23:08:21.8003175+07:00 0HMFE87FV1C03:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/admin   (ca22a1cb)
+2022-02-12T23:08:21.8076873+07:00 0HMFE87FV1C03:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T23:08:21.8195240+07:00 0HMFE87FV1C03:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T23:08:22.0321714+07:00 0HMFE87FV1C03:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2022-02-12T23:08:22.0604721+07:00 0HMFE87FV1C03:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 243.4714ms (afa2e885)
+2022-02-12T23:08:22.0647784+07:00 0HMFE87FV1C03:00000002 [INF] Request finished in 264.6498ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T23:08:23.4008947+07:00 0HMFE87FV1C02:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44366/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2022-02-12T23:08:23.4261912+07:00 0HMFE87FV1C02:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T23:08:23.4908035+07:00 0HMFE87FV1C02:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2022-02-12T23:08:23.5069734+07:00 0HMFE87FV1C02:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T23:08:23.5749721+07:00 0HMFE87FV1C02:00000002 [INF] Executed DbCommand ("34"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2022-02-12T23:08:23.6596070+07:00 0HMFE87FV1C02:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2022-02-12T23:08:23.6950988+07:00 0HMFE87FV1C02:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T23:08:23.7085289+07:00 0HMFE87FV1C02:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2022-02-12T23:08:23.7266732+07:00 0HMFE87FV1C02:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2022-02-12T23:08:23.7322093+07:00 0HMFE87FV1C02:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T23:08:23.7407765+07:00 0HMFE87FV1C02:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2022-02-12T23:08:23.7444373+07:00 0HMFE87FV1C02:00000002 [INF] User logged in. (fdce0db4)
+2022-02-12T23:08:23.7514579+07:00 0HMFE87FV1C02:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2022-02-12T23:08:23.7848441+07:00 0HMFE87FV1C02:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 325.7766ms (afa2e885)
+2022-02-12T23:08:23.7900890+07:00 0HMFE87FV1C02:00000002 [INF] Request finished in 389.3501ms 200 application/json; charset=utf-8 (791a596a)
+2022-02-12T23:08:23.8249672+07:00 0HMFE87FV1C03:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin/Home/Index   (ca22a1cb)
+2022-02-12T23:08:23.8290183+07:00 0HMFE87FV1C03:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T23:08:23.8337628+07:00 0HMFE87FV1C03:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T23:08:23.9656317+07:00 0HMFE87FV1C03:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2022-02-12T23:08:24.2364692+07:00 0HMFE87FV1C03:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T23:08:24.2644796+07:00 0HMFE87FV1C03:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2022-02-12T23:08:24.5738183+07:00 0HMFE87FV1C03:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 739.4314ms (afa2e885)
+2022-02-12T23:08:24.6016524+07:00 0HMFE87FV1C03:00000003 [INF] Request finished in 773.6038ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T23:08:27.4278487+07:00 0HMFE87FV1C02:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44366/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2022-02-12T23:08:27.4321306+07:00 0HMFE87FV1C02:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T23:08:27.4465571+07:00 0HMFE87FV1C02:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.AccountController.Logout (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T23:08:27.4656764+07:00 0HMFE87FV1C02:00000003 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2022-02-12T23:08:27.4711205+07:00 0HMFE87FV1C02:00000003 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2022-02-12T23:08:27.4968824+07:00 0HMFE87FV1C02:00000003 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2022-02-12T23:08:27.5018133+07:00 0HMFE87FV1C02:00000003 [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2022-02-12T23:08:27.5064345+07:00 0HMFE87FV1C02:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.AccountController.Logout (TeduCoreApp)" in 67.3162ms (afa2e885)
+2022-02-12T23:08:27.5113288+07:00 0HMFE87FV1C02:00000003 [INF] Request finished in 83.4515ms 302  (791a596a)
+2022-02-12T23:08:27.5229709+07:00 0HMFE87FV1C03:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin/Login/Index   (ca22a1cb)
+2022-02-12T23:08:27.5275873+07:00 0HMFE87FV1C03:00000004 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T23:08:27.5314065+07:00 0HMFE87FV1C03:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2022-02-12T23:08:27.5363891+07:00 0HMFE87FV1C03:00000004 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 8.6343ms (afa2e885)
+2022-02-12T23:08:27.5409696+07:00 0HMFE87FV1C03:00000004 [INF] Request finished in 17.0511ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-12T23:08:28.8830937+07:00 0HMFE87FV1C02:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44366/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2022-02-12T23:08:28.8888324+07:00 0HMFE87FV1C02:00000004 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2022-02-12T23:08:28.8934007+07:00 0HMFE87FV1C02:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T23:08:28.9008478+07:00 0HMFE87FV1C02:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2022-02-12T23:08:28.9134306+07:00 0HMFE87FV1C02:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2022-02-12T23:08:28.9202271+07:00 0HMFE87FV1C02:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T23:08:28.9272912+07:00 0HMFE87FV1C02:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2022-02-12T23:08:28.9534813+07:00 0HMFE87FV1C02:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2022-02-12T23:08:28.9599582+07:00 0HMFE87FV1C02:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-12T23:08:28.9651553+07:00 0HMFE87FV1C02:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2022-02-12T23:08:28.9686963+07:00 0HMFE87FV1C02:00000004 [INF] User logged in. (fdce0db4)
+2022-02-12T23:08:28.9948124+07:00 0HMFE87FV1C02:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2022-02-12T23:08:28.9990994+07:00 0HMFE87FV1C02:00000004 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 111.5646ms (afa2e885)
+2022-02-12T23:08:29.0030131+07:00 0HMFE87FV1C02:00000004 [INF] Request finished in 120.387ms 200 application/json; charset=utf-8 (791a596a)
+2022-02-12T23:08:29.0149053+07:00 0HMFE87FV1C03:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin/Home/Index   (ca22a1cb)
+2022-02-12T23:08:29.0192232+07:00 0HMFE87FV1C03:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-12T23:08:29.0222361+07:00 0HMFE87FV1C03:00000005 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-12T23:08:29.0253075+07:00 0HMFE87FV1C03:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2022-02-12T23:08:29.0294255+07:00 0HMFE87FV1C03:00000005 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-12T23:08:29.0356508+07:00 0HMFE87FV1C03:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2022-02-12T23:08:29.0424243+07:00 0HMFE87FV1C03:00000005 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 18.4723ms (afa2e885)
+2022-02-12T23:08:29.0691526+07:00 0HMFE87FV1C03:00000005 [INF] Request finished in 31.6492ms 200 text/html; charset=utf-8 (791a596a)
