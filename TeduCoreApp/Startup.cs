@@ -20,6 +20,7 @@ using TeduCoreApp.Data.EF.Repositories;
 using TeduCoreApp.Application.Implementation;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
+using TeduCoreApp.Helpers;
 
 namespace TeduCoreApp
 {
@@ -73,6 +74,7 @@ namespace TeduCoreApp
 
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<DbInitializer>();
+            services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
 
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
 
@@ -101,7 +103,7 @@ namespace TeduCoreApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
                 routes.MapRoute(name: "areaRoute",
-                  template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                  template: "{area:exists}/{controller=Login}/{action=Index}/{id?}");
             });
         }
     }

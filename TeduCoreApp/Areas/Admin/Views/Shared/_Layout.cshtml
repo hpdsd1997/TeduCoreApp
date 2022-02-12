@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using TeduCoreApp.Extensions;
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -39,7 +40,7 @@
                         </div>
                         <div class="profile_info">
                             <span>Welcome,</span>
-                            <h2>John Doe</h2>
+                            <h2>@User.GetSpecificClaim("FullName")</h2>
                         </div>
                     </div>
                     <!-- /menu profile quick info -->
@@ -160,7 +161,6 @@
                                 <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
                             </ul>
                         </div>
-
                     </div>
                     <!-- /sidebar menu -->
                     <!-- /menu footer buttons -->
@@ -193,7 +193,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="">
                                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                    <img src="/admin-side/images/img.jpg" alt="">John Doe
+                                    <img src="@User.GetSpecificClaim("Avatar")" alt="">@User.GetSpecificClaim("FullName")
                                     <span class=" fa fa-angle-down"></span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -255,7 +255,7 @@
                                         <a>
                                             <span class="image"><img src="/admin-side/images/img.jpg" alt="Profile Image" /></span>
                                             <span>
-                                                <span>John Smith</span>
+                                                <span>@User.GetSpecificClaim("FullName")</span>
                                                 <span class="time">3 mins ago</span>
                                             </span>
                                             <span class="message">
@@ -312,15 +312,15 @@
     <script src="~/lib/jquery-sparkline/dist/jquery.sparkline.js"></script>
     <!-- Flot -->
     @*<script src="../vendors/Flot/jquery.flot.js"></script>
-    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
-    <script src="../vendors/Flot/jquery.flot.time.js"></script>
-    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
-    <script src="../vendors/Flot/jquery.flot.resize.js"></script>*@
+        <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+        <script src="../vendors/Flot/jquery.flot.time.js"></script>
+        <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+        <script src="../vendors/Flot/jquery.flot.resize.js"></script>*@
 
     <!-- Flot plugins -->
     @*<script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
-    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>*@
+        <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+        <script src="../vendors/flot.curvedlines/curvedLines.js"></script>*@
     <!-- DateJS -->
     @*<script src="../vendors/DateJS/build/date.js"></script>*@
     <!-- bootstrap-daterangepicker -->
