@@ -1582,3 +1582,541 @@ END" (0723d8ff)
 2022-02-14T22:32:02.8833140+07:00 0HMFFPSJ2E7EJ:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
 2022-02-14T22:32:03.0201372+07:00 0HMFFPSJ2E7EJ:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
 2022-02-14T22:32:03.0318220+07:00 0HMFFPSJ2E7EJ:00000001 [INF] Executing action method "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:44:53.8114832+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:44:54.1142432+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-14T22:44:54.1514876+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-14T22:44:54.1854703+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2022-02-14T22:44:54.2276250+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2022-02-14T22:44:54.2543360+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2022-02-14T22:44:54.2828407+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2022-02-14T22:44:54.3102737+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2022-02-14T22:44:54.3362066+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2022-02-14T22:44:54.3650094+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2022-02-14T22:44:54.3932359+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-14T22:44:54.4194939+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-14T22:44:54.4465247+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2022-02-14T22:44:54.8528762+07:00 0HMFFQ3P4J662:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:43783/  0 (ca22a1cb)
+2022-02-14T22:44:54.8528769+07:00 0HMFFQ3P4J663:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/   (ca22a1cb)
+2022-02-14T22:44:54.8922490+07:00 0HMFFQ3P4J662:00000001 [INF] Request finished in 94.3084ms 200  (791a596a)
+2022-02-14T22:44:54.9343568+07:00 0HMFFQ3P4J663:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:44:55.1299567+07:00 0HMFFQ3P4J663:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:44:55.1512075+07:00 0HMFFQ3P4J663:00000001 [INF] Executing action method "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:44:57.7588953+07:00 0HMFFQ3P4J663:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2022-02-14T22:44:58.4806407+07:00 0HMFFQ3P4J663:00000001 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 3373.3882ms (afa2e885)
+2022-02-14T22:44:58.4925464+07:00 0HMFFQ3P4J663:00000001 [INF] Request finished in 3715.2742ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-14T22:45:01.4249461+07:00 0HMFFQ3P4J662:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/admin   (ca22a1cb)
+2022-02-14T22:45:01.4344739+07:00 0HMFFQ3P4J662:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:45:01.4449724+07:00 0HMFFQ3P4J662:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:45:01.7050393+07:00 0HMFFQ3P4J662:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2022-02-14T22:45:01.7351954+07:00 0HMFFQ3P4J662:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 291.3996ms (afa2e885)
+2022-02-14T22:45:01.7410683+07:00 0HMFFQ3P4J662:00000002 [INF] Request finished in 317.612ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-14T22:45:01.7845610+07:00 0HMFFQ3P4J663:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44366/app/shared/tedu.js   (ca22a1cb)
+2022-02-14T22:45:01.7990915+07:00 0HMFFQ3P4J663:00000002 [INF] The file "/app/shared/tedu.js" was not modified (f1f8d725)
+2022-02-14T22:45:01.8073773+07:00 0HMFFQ3P4J663:00000002 [INF] Request finished in 23.2063ms 304 application/javascript (791a596a)
+2022-02-14T22:45:03.2831978+07:00 0HMFFQ3P4J662:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44366/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2022-02-14T22:45:03.2901809+07:00 0HMFFQ3P4J662:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:45:03.3647790+07:00 0HMFFQ3P4J662:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:45:03.3815958+07:00 0HMFFQ3P4J662:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:45:03.4590549+07:00 0HMFFQ3P4J662:00000003 [INF] Executed DbCommand ("39"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2022-02-14T22:45:03.5585848+07:00 0HMFFQ3P4J662:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2022-02-14T22:45:03.6021386+07:00 0HMFFQ3P4J662:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-14T22:45:03.6192994+07:00 0HMFFQ3P4J662:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2022-02-14T22:45:03.6393916+07:00 0HMFFQ3P4J662:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2022-02-14T22:45:03.6460648+07:00 0HMFFQ3P4J662:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2022-02-14T22:45:03.6565602+07:00 0HMFFQ3P4J662:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2022-02-14T22:45:03.6607483+07:00 0HMFFQ3P4J662:00000003 [INF] User logged in. (fdce0db4)
+2022-02-14T22:45:03.6680576+07:00 0HMFFQ3P4J662:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2022-02-14T22:45:03.7080066+07:00 0HMFFQ3P4J662:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 383.7809ms (afa2e885)
+2022-02-14T22:45:03.7149044+07:00 0HMFFQ3P4J662:00000003 [INF] Request finished in 431.5247ms 200 application/json; charset=utf-8 (791a596a)
+2022-02-14T22:45:03.7296124+07:00 0HMFFQ3P4J663:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin/Home/Index   (ca22a1cb)
+2022-02-14T22:45:03.7355708+07:00 0HMFFQ3P4J663:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:45:03.7409454+07:00 0HMFFQ3P4J663:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:45:03.7457208+07:00 0HMFFQ3P4J663:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:45:03.8584591+07:00 0HMFFQ3P4J663:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2022-02-14T22:45:04.0582771+07:00 0HMFFQ3P4J663:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:45:04.1051705+07:00 0HMFFQ3P4J663:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2022-02-14T22:45:04.5301373+07:00 0HMFFQ3P4J663:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 788.2853ms (afa2e885)
+2022-02-14T22:45:04.5418876+07:00 0HMFFQ3P4J663:00000003 [INF] Request finished in 807.802ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-14T22:45:04.5884815+07:00 0HMFFQ3P4J662:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2022-02-14T22:45:04.5924040+07:00 0HMFFQ3P4J662:00000004 [INF] The file "/lib/twbs-pagination/jquery.twbsPagination.js" was not modified (f1f8d725)
+2022-02-14T22:45:04.5971636+07:00 0HMFFQ3P4J662:00000004 [INF] Request finished in 8.831ms 304 application/javascript (791a596a)
+2022-02-14T22:45:19.1740153+07:00 0HMFFQ3P4J663:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44366/admin/productcategory/index   (ca22a1cb)
+2022-02-14T22:45:19.1794417+07:00 0HMFFQ3P4J663:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:45:19.1848604+07:00 0HMFFQ3P4J663:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:45:19.1897701+07:00 0HMFFQ3P4J663:00000004 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:45:19.3021423+07:00 0HMFFQ3P4J663:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2022-02-14T22:45:19.3128701+07:00 0HMFFQ3P4J663:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:45:19.3192975+07:00 0HMFFQ3P4J663:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2022-02-14T22:45:19.4014987+07:00 0HMFFQ3P4J663:00000004 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (TeduCoreApp)" in 191.7912ms (afa2e885)
+2022-02-14T22:45:19.4090654+07:00 0HMFFQ3P4J663:00000004 [INF] Request finished in 234.0806ms 200 text/html; charset=utf-8 (791a596a)
+2022-02-14T22:45:19.4786087+07:00 0HMFFQ3P4J662:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/jQuery-EasyUI/themes/bootstrap/easyui.css   (ca22a1cb)
+2022-02-14T22:45:19.5299835+07:00 0HMFFQ3P4J663:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/jQuery-EasyUI/themes/icon.css   (ca22a1cb)
+2022-02-14T22:45:19.5528705+07:00 0HMFFQ3P4J662:00000005 [INF] The file "/lib/jQuery-EasyUI/themes/bootstrap/easyui.css" was not modified (f1f8d725)
+2022-02-14T22:45:19.6010932+07:00 0HMFFQ3P4J664:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/jQuery-EasyUI/jquery.easyui.min.js   (ca22a1cb)
+2022-02-14T22:45:19.6245366+07:00 0HMFFQ3P4J665:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44366/app/controllers/product-category/index.js?v=f9mNkqrbT3bZvamvChhGDm3NQMCMDzKmk_AdltTZWeQ   (ca22a1cb)
+2022-02-14T22:45:19.6497680+07:00 0HMFFQ3P4J663:00000005 [INF] The file "/lib/jQuery-EasyUI/themes/icon.css" was not modified (f1f8d725)
+2022-02-14T22:45:19.7273678+07:00 0HMFFQ3P4J663:00000005 [INF] Request finished in 196.7352ms 304 text/css (791a596a)
+2022-02-14T22:45:19.7283901+07:00 0HMFFQ3P4J664:00000001 [INF] The file "/lib/jQuery-EasyUI/jquery.easyui.min.js" was not modified (f1f8d725)
+2022-02-14T22:45:19.7535841+07:00 0HMFFQ3P4J665:00000001 [INF] Sending file. Request path: '"/app/controllers/product-category/index.js"'. Physical path: '"D:\TeduCoreApp\TeduCoreApp\wwwroot\app\controllers\product-category\index.js"' (27b0a520)
+2022-02-14T22:45:19.7590077+07:00 0HMFFQ3P4J664:00000001 [INF] Request finished in 244.9356ms 304 application/javascript (791a596a)
+2022-02-14T22:45:19.7677764+07:00 0HMFFQ3P4J665:00000001 [INF] Request finished in 277.5999ms 200 application/javascript (791a596a)
+2022-02-14T22:45:19.7946310+07:00 0HMFFQ3P4J662:00000005 [INF] Request finished in 143.7895ms 304 text/css (791a596a)
+2022-02-14T22:45:19.8012516+07:00 0HMFFQ3P4J662:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44366/Admin/ProductCategory/GetAll   (ca22a1cb)
+2022-02-14T22:45:19.8060572+07:00 0HMFFQ3P4J662:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:45:19.8135058+07:00 0HMFFQ3P4J662:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:45:19.8203613+07:00 0HMFFQ3P4J662:00000006 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:45:19.8284124+07:00 0HMFFQ3P4J662:00000006 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:45:19.8682391+07:00 0HMFFQ3P4J662:00000006 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2022-02-14T22:45:19.8869602+07:00 0HMFFQ3P4J662:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2022-02-14T22:45:19.8943964+07:00 0HMFFQ3P4J662:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2022-02-14T22:45:19.8991873+07:00 0HMFFQ3P4J662:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2022-02-14T22:45:19.9030522+07:00 0HMFFQ3P4J662:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2022-02-14T22:45:19.9076787+07:00 0HMFFQ3P4J662:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2022-02-14T22:45:19.9291254+07:00 0HMFFQ3P4J662:00000006 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (TeduCoreApp)" in 116.7307ms (afa2e885)
+2022-02-14T22:45:19.9333378+07:00 0HMFFQ3P4J662:00000006 [INF] Request finished in 132.2897ms 200 application/json; charset=utf-8 (791a596a)
+2022-02-14T22:45:19.9444046+07:00 0HMFFQ3P4J663:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44366/lib/jQuery-EasyUI/themes/bootstrap/images/tree_icons.png   (ca22a1cb)
+2022-02-14T22:45:19.9487564+07:00 0HMFFQ3P4J663:00000006 [INF] The file "/lib/jQuery-EasyUI/themes/bootstrap/images/tree_icons.png" was not modified (f1f8d725)
+2022-02-14T22:45:19.9528758+07:00 0HMFFQ3P4J663:00000006 [INF] Request finished in 7.9998ms 304 image/png (791a596a)
+2022-02-14T22:45:22.3968428+07:00 0HMFFQ3P4J664:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44366/Admin/ProductCategory/UpdateParentId application/x-www-form-urlencoded; charset=UTF-8 71 (ca22a1cb)
+2022-02-14T22:45:22.4014422+07:00 0HMFFQ3P4J664:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:45:22.4086596+07:00 0HMFFQ3P4J664:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:45:22.4389117+07:00 0HMFFQ3P4J664:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" with arguments (["2", "1", "System.Collections.Generic.Dictionary`2[System.Int32,System.Int32]"]) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:45:22.4451253+07:00 0HMFFQ3P4J664:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:45:22.4595668+07:00 0HMFFQ3P4J664:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:45:22.4863993+07:00 0HMFFQ3P4J664:00000002 [WRN] The LINQ expression '"where __items_0.ContainsKey([x].Id)"' could not be translated and will be evaluated locally. (011792c6)
+2022-02-14T22:45:22.4963814+07:00 0HMFFQ3P4J664:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]" (0723d8ff)
+2022-02-14T22:45:22.5738803+07:00 0HMFFQ3P4J664:00000002 [INF] Executed DbCommand ("38"ms) [Parameters=["@p14='?', @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?', @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?', @p13='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-02-14T22:45:22.5835569+07:00 0HMFFQ3P4J664:00000002 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2022-02-14T22:45:22.5876346+07:00 0HMFFQ3P4J664:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" in 178.9968ms (afa2e885)
+2022-02-14T22:45:22.5917780+07:00 0HMFFQ3P4J664:00000002 [INF] Request finished in 198.1042ms 200  (791a596a)
+2022-02-14T22:45:30.0425468+07:00 0HMFFQ3P4J665:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44366/Admin/ProductCategory/UpdateParentId application/x-www-form-urlencoded; charset=UTF-8 71 (ca22a1cb)
+2022-02-14T22:45:30.0462118+07:00 0HMFFQ3P4J665:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:45:30.0498994+07:00 0HMFFQ3P4J665:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:45:30.0536301+07:00 0HMFFQ3P4J665:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" with arguments (["2", "1", "System.Collections.Generic.Dictionary`2[System.Int32,System.Int32]"]) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:45:30.0572756+07:00 0HMFFQ3P4J665:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:45:30.0619721+07:00 0HMFFQ3P4J665:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:45:30.0665105+07:00 0HMFFQ3P4J665:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]" (0723d8ff)
+2022-02-14T22:45:30.0739189+07:00 0HMFFQ3P4J665:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@p14='?', @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?', @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?', @p13='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-02-14T22:45:30.0775385+07:00 0HMFFQ3P4J665:00000002 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2022-02-14T22:45:30.1027357+07:00 0HMFFQ3P4J665:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" in 31.1273ms (afa2e885)
+2022-02-14T22:45:30.1069179+07:00 0HMFFQ3P4J665:00000002 [INF] Request finished in 67.3049ms 200  (791a596a)
+2022-02-14T22:45:35.6210359+07:00 0HMFFQ3P4J662:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:44366/Admin/ProductCategory/UpdateParentId application/x-www-form-urlencoded; charset=UTF-8 71 (ca22a1cb)
+2022-02-14T22:45:35.6246916+07:00 0HMFFQ3P4J662:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:45:35.6280921+07:00 0HMFFQ3P4J662:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:45:35.6317508+07:00 0HMFFQ3P4J662:00000007 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" with arguments (["2", "1", "System.Collections.Generic.Dictionary`2[System.Int32,System.Int32]"]) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:45:35.6350910+07:00 0HMFFQ3P4J662:00000007 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:45:35.6400884+07:00 0HMFFQ3P4J662:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:45:35.6447109+07:00 0HMFFQ3P4J662:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]" (0723d8ff)
+2022-02-14T22:45:35.6506720+07:00 0HMFFQ3P4J662:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=["@p14='?', @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?', @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?', @p13='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-02-14T22:45:35.6542456+07:00 0HMFFQ3P4J662:00000007 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2022-02-14T22:45:35.6573199+07:00 0HMFFQ3P4J662:00000007 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" in 29.4657ms (afa2e885)
+2022-02-14T22:45:35.6611551+07:00 0HMFFQ3P4J662:00000007 [INF] Request finished in 40.2704ms 200  (791a596a)
+2022-02-14T22:45:43.9715356+07:00 0HMFFQ3P4J663:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:44366/Admin/ProductCategory/UpdateParentId application/x-www-form-urlencoded; charset=UTF-8 71 (ca22a1cb)
+2022-02-14T22:45:43.9750659+07:00 0HMFFQ3P4J663:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:45:43.9784132+07:00 0HMFFQ3P4J663:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:45:43.9826460+07:00 0HMFFQ3P4J663:00000007 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" with arguments (["2", "1", "System.Collections.Generic.Dictionary`2[System.Int32,System.Int32]"]) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:45:43.9864716+07:00 0HMFFQ3P4J663:00000007 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:45:43.9930412+07:00 0HMFFQ3P4J663:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:45:43.9987176+07:00 0HMFFQ3P4J663:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]" (0723d8ff)
+2022-02-14T22:45:44.0051323+07:00 0HMFFQ3P4J663:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=["@p14='?', @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?', @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?', @p13='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-02-14T22:45:44.0096188+07:00 0HMFFQ3P4J663:00000007 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2022-02-14T22:45:44.0131819+07:00 0HMFFQ3P4J663:00000007 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" in 34.4879ms (afa2e885)
+2022-02-14T22:45:44.0177402+07:00 0HMFFQ3P4J663:00000007 [INF] Request finished in 45.7701ms 200  (791a596a)
+2022-02-14T22:45:47.4489757+07:00 0HMFFQ3P4J664:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44366/Admin/ProductCategory/UpdateParentId application/x-www-form-urlencoded; charset=UTF-8 71 (ca22a1cb)
+2022-02-14T22:45:47.4525293+07:00 0HMFFQ3P4J664:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:45:47.4557567+07:00 0HMFFQ3P4J664:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:45:47.4593355+07:00 0HMFFQ3P4J664:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" with arguments (["2", "1", "System.Collections.Generic.Dictionary`2[System.Int32,System.Int32]"]) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:45:47.4624908+07:00 0HMFFQ3P4J664:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:45:47.4672719+07:00 0HMFFQ3P4J664:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:45:47.4716472+07:00 0HMFFQ3P4J664:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]" (0723d8ff)
+2022-02-14T22:45:47.4778021+07:00 0HMFFQ3P4J664:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@p14='?', @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?', @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?', @p13='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-02-14T22:45:47.4811691+07:00 0HMFFQ3P4J664:00000003 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2022-02-14T22:45:47.4842381+07:00 0HMFFQ3P4J664:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" in 28.5501ms (afa2e885)
+2022-02-14T22:45:47.4882032+07:00 0HMFFQ3P4J664:00000003 [INF] Request finished in 41.9329ms 200  (791a596a)
+2022-02-14T22:45:49.3547622+07:00 0HMFFQ3P4J665:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44366/Admin/ProductCategory/UpdateParentId application/x-www-form-urlencoded; charset=UTF-8 71 (ca22a1cb)
+2022-02-14T22:45:49.3599125+07:00 0HMFFQ3P4J665:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:45:49.3847837+07:00 0HMFFQ3P4J665:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:45:49.3890481+07:00 0HMFFQ3P4J665:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" with arguments (["2", "1", "System.Collections.Generic.Dictionary`2[System.Int32,System.Int32]"]) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:45:49.3937293+07:00 0HMFFQ3P4J665:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:45:49.3984108+07:00 0HMFFQ3P4J665:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:45:49.4031989+07:00 0HMFFQ3P4J665:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]" (0723d8ff)
+2022-02-14T22:45:49.4092477+07:00 0HMFFQ3P4J665:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@p14='?', @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?', @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?', @p13='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-02-14T22:45:49.4130769+07:00 0HMFFQ3P4J665:00000003 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2022-02-14T22:45:49.4169658+07:00 0HMFFQ3P4J665:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" in 53.0461ms (afa2e885)
+2022-02-14T22:45:49.4215965+07:00 0HMFFQ3P4J665:00000003 [INF] Request finished in 66.4685ms 200  (791a596a)
+2022-02-14T22:45:56.4151380+07:00 0HMFFQ3P4J662:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:44366/Admin/ProductCategory/ReOrder application/x-www-form-urlencoded; charset=UTF-8 21 (ca22a1cb)
+2022-02-14T22:45:56.4194548+07:00 0HMFFQ3P4J662:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:45:56.4237941+07:00 0HMFFQ3P4J662:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:45:56.4272444+07:00 0HMFFQ3P4J662:00000008 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.ReOrder (TeduCoreApp)" with arguments (["2", "3"]) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:45:56.4309447+07:00 0HMFFQ3P4J662:00000008 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:45:56.4358195+07:00 0HMFFQ3P4J662:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:45:56.4401329+07:00 0HMFFQ3P4J662:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:45:56.4503898+07:00 0HMFFQ3P4J662:00000008 [INF] Executed DbCommand ("3"ms) [Parameters=["@p14='?', @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?', @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?', @p13='?', @p29='?', @p15='?', @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?', @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?', @p28='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;
+
+UPDATE [ProductCategories] SET [DateCreated] = @p15, [DateModified] = @p16, [Description] = @p17, [HomeFlag] = @p18, [HomeOrder] = @p19, [Image] = @p20, [Name] = @p21, [ParentId] = @p22, [SeoAlias] = @p23, [SeoDescription] = @p24, [SeoKeywords] = @p25, [SeoPageTitle] = @p26, [SortOrder] = @p27, [Status] = @p28
+WHERE [Id] = @p29;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-02-14T22:45:56.4540048+07:00 0HMFFQ3P4J662:00000008 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2022-02-14T22:45:56.4572511+07:00 0HMFFQ3P4J662:00000008 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.ReOrder (TeduCoreApp)" in 33.4881ms (afa2e885)
+2022-02-14T22:45:56.4608171+07:00 0HMFFQ3P4J662:00000008 [INF] Request finished in 46.639ms 200  (791a596a)
+2022-02-14T22:46:06.7075450+07:00 0HMFFQ3P4J663:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:44366/Admin/ProductCategory/UpdateParentId application/x-www-form-urlencoded; charset=UTF-8 71 (ca22a1cb)
+2022-02-14T22:46:06.7112063+07:00 0HMFFQ3P4J663:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:46:06.7151721+07:00 0HMFFQ3P4J663:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:46:06.7189056+07:00 0HMFFQ3P4J663:00000008 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" with arguments (["4", "2", "System.Collections.Generic.Dictionary`2[System.Int32,System.Int32]"]) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:46:06.7221589+07:00 0HMFFQ3P4J663:00000008 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:46:06.7275549+07:00 0HMFFQ3P4J663:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:46:06.7320193+07:00 0HMFFQ3P4J663:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]" (0723d8ff)
+2022-02-14T22:46:06.7589739+07:00 0HMFFQ3P4J663:00000008 [INF] Executed DbCommand ("2"ms) [Parameters=["@p14='?', @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?', @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?', @p13='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-02-14T22:46:06.7626279+07:00 0HMFFQ3P4J663:00000008 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2022-02-14T22:46:06.7655702+07:00 0HMFFQ3P4J663:00000008 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" in 51.3173ms (afa2e885)
+2022-02-14T22:46:06.7691749+07:00 0HMFFQ3P4J663:00000008 [INF] Request finished in 62.3913ms 200  (791a596a)
+2022-02-14T22:46:13.1731405+07:00 0HMFFQ3P4J664:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44366/Admin/ProductCategory/ReOrder application/x-www-form-urlencoded; charset=UTF-8 21 (ca22a1cb)
+2022-02-14T22:46:13.1767832+07:00 0HMFFQ3P4J664:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:46:13.1798279+07:00 0HMFFQ3P4J664:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:46:13.1833830+07:00 0HMFFQ3P4J664:00000004 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.ReOrder (TeduCoreApp)" with arguments (["4", "2"]) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:46:13.1865256+07:00 0HMFFQ3P4J664:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:46:13.1913195+07:00 0HMFFQ3P4J664:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:46:13.1952948+07:00 0HMFFQ3P4J664:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:46:13.2047916+07:00 0HMFFQ3P4J664:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@p14='?', @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?', @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?', @p13='?', @p29='?', @p15='?', @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?', @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?', @p28='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;
+
+UPDATE [ProductCategories] SET [DateCreated] = @p15, [DateModified] = @p16, [Description] = @p17, [HomeFlag] = @p18, [HomeOrder] = @p19, [Image] = @p20, [Name] = @p21, [ParentId] = @p22, [SeoAlias] = @p23, [SeoDescription] = @p24, [SeoKeywords] = @p25, [SeoPageTitle] = @p26, [SortOrder] = @p27, [Status] = @p28
+WHERE [Id] = @p29;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-02-14T22:46:13.2083154+07:00 0HMFFQ3P4J664:00000004 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2022-02-14T22:46:13.2119676+07:00 0HMFFQ3P4J664:00000004 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.ReOrder (TeduCoreApp)" in 31.4543ms (afa2e885)
+2022-02-14T22:46:13.2160256+07:00 0HMFFQ3P4J664:00000004 [INF] Request finished in 43.5258ms 200  (791a596a)
+2022-02-14T22:48:35.3601432+07:00 0HMFFQ3P4J666:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44366/Admin/ProductCategory/UpdateParentId application/x-www-form-urlencoded; charset=UTF-8 71 (ca22a1cb)
+2022-02-14T22:48:35.3701955+07:00 0HMFFQ3P4J666:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:48:35.3950278+07:00 0HMFFQ3P4J666:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:48:35.3986461+07:00 0HMFFQ3P4J666:00000001 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" with arguments (["4", "2", "System.Collections.Generic.Dictionary`2[System.Int32,System.Int32]"]) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:48:35.4231919+07:00 0HMFFQ3P4J666:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:48:35.4286841+07:00 0HMFFQ3P4J666:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:48:35.4542500+07:00 0HMFFQ3P4J666:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]" (0723d8ff)
+2022-02-14T22:48:35.4645701+07:00 0HMFFQ3P4J666:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@p14='?', @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?', @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?', @p13='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-02-14T22:48:35.4685946+07:00 0HMFFQ3P4J666:00000001 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2022-02-14T22:48:35.4728078+07:00 0HMFFQ3P4J666:00000001 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" in 98.2533ms (afa2e885)
+2022-02-14T22:48:35.4779642+07:00 0HMFFQ3P4J666:00000001 [INF] Request finished in 116.9901ms 200  (791a596a)
+2022-02-14T22:48:38.3402650+07:00 0HMFFQ3P4J666:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44366/Admin/ProductCategory/ReOrder application/x-www-form-urlencoded; charset=UTF-8 21 (ca22a1cb)
+2022-02-14T22:48:38.3433994+07:00 0HMFFQ3P4J666:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:48:38.3467522+07:00 0HMFFQ3P4J666:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:48:38.3501591+07:00 0HMFFQ3P4J666:00000002 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.ReOrder (TeduCoreApp)" with arguments (["4", "2"]) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:48:38.3531363+07:00 0HMFFQ3P4J666:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:48:38.3570743+07:00 0HMFFQ3P4J666:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:48:38.3608012+07:00 0HMFFQ3P4J666:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:48:38.3688399+07:00 0HMFFQ3P4J666:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@p14='?', @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?', @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?', @p13='?', @p29='?', @p15='?', @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?', @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?', @p28='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;
+
+UPDATE [ProductCategories] SET [DateCreated] = @p15, [DateModified] = @p16, [Description] = @p17, [HomeFlag] = @p18, [HomeOrder] = @p19, [Image] = @p20, [Name] = @p21, [ParentId] = @p22, [SeoAlias] = @p23, [SeoDescription] = @p24, [SeoKeywords] = @p25, [SeoPageTitle] = @p26, [SortOrder] = @p27, [Status] = @p28
+WHERE [Id] = @p29;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-02-14T22:48:38.3721667+07:00 0HMFFQ3P4J666:00000002 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2022-02-14T22:48:38.3754354+07:00 0HMFFQ3P4J666:00000002 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.ReOrder (TeduCoreApp)" in 28.6932ms (afa2e885)
+2022-02-14T22:48:38.3799844+07:00 0HMFFQ3P4J666:00000002 [INF] Request finished in 39.5437ms 200  (791a596a)
+2022-02-14T22:48:42.7718860+07:00 0HMFFQ3P4J666:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44366/Admin/ProductCategory/ReOrder application/x-www-form-urlencoded; charset=UTF-8 21 (ca22a1cb)
+2022-02-14T22:48:42.7757360+07:00 0HMFFQ3P4J666:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:48:42.7792508+07:00 0HMFFQ3P4J666:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:48:42.7826919+07:00 0HMFFQ3P4J666:00000003 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.ReOrder (TeduCoreApp)" with arguments (["4", "2"]) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:48:42.7858009+07:00 0HMFFQ3P4J666:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:48:42.7903583+07:00 0HMFFQ3P4J666:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:48:42.7947973+07:00 0HMFFQ3P4J666:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:48:42.8043123+07:00 0HMFFQ3P4J666:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@p14='?', @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?', @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?', @p13='?', @p29='?', @p15='?', @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?', @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?', @p28='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;
+
+UPDATE [ProductCategories] SET [DateCreated] = @p15, [DateModified] = @p16, [Description] = @p17, [HomeFlag] = @p18, [HomeOrder] = @p19, [Image] = @p20, [Name] = @p21, [ParentId] = @p22, [SeoAlias] = @p23, [SeoDescription] = @p24, [SeoKeywords] = @p25, [SeoPageTitle] = @p26, [SortOrder] = @p27, [Status] = @p28
+WHERE [Id] = @p29;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-02-14T22:48:42.8078269+07:00 0HMFFQ3P4J666:00000003 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2022-02-14T22:48:42.8111201+07:00 0HMFFQ3P4J666:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.ReOrder (TeduCoreApp)" in 31.9776ms (afa2e885)
+2022-02-14T22:48:42.8145357+07:00 0HMFFQ3P4J666:00000003 [INF] Request finished in 43.5278ms 200  (791a596a)
+2022-02-14T22:48:46.5599203+07:00 0HMFFQ3P4J666:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44366/Admin/ProductCategory/ReOrder application/x-www-form-urlencoded; charset=UTF-8 21 (ca22a1cb)
+2022-02-14T22:48:46.5635858+07:00 0HMFFQ3P4J666:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:48:46.5665401+07:00 0HMFFQ3P4J666:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:48:46.5698205+07:00 0HMFFQ3P4J666:00000004 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.ReOrder (TeduCoreApp)" with arguments (["2", "3"]) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:48:46.5947402+07:00 0HMFFQ3P4J666:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:48:46.5993235+07:00 0HMFFQ3P4J666:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:48:46.6034246+07:00 0HMFFQ3P4J666:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:48:46.6117993+07:00 0HMFFQ3P4J666:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@p14='?', @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?', @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?', @p13='?', @p29='?', @p15='?', @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?', @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?', @p28='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;
+
+UPDATE [ProductCategories] SET [DateCreated] = @p15, [DateModified] = @p16, [Description] = @p17, [HomeFlag] = @p18, [HomeOrder] = @p19, [Image] = @p20, [Name] = @p21, [ParentId] = @p22, [SeoAlias] = @p23, [SeoDescription] = @p24, [SeoKeywords] = @p25, [SeoPageTitle] = @p26, [SortOrder] = @p27, [Status] = @p28
+WHERE [Id] = @p29;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-02-14T22:48:46.6163766+07:00 0HMFFQ3P4J666:00000004 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2022-02-14T22:48:46.6405967+07:00 0HMFFQ3P4J666:00000004 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.ReOrder (TeduCoreApp)" in 52.7097ms (afa2e885)
+2022-02-14T22:48:46.6441294+07:00 0HMFFQ3P4J666:00000004 [INF] Request finished in 104.8771ms 200  (791a596a)
+2022-02-14T22:48:56.1777440+07:00 0HMFFQ3P4J666:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:44366/Admin/ProductCategory/ReOrder application/x-www-form-urlencoded; charset=UTF-8 21 (ca22a1cb)
+2022-02-14T22:48:56.1818446+07:00 0HMFFQ3P4J666:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:48:56.1865097+07:00 0HMFFQ3P4J666:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:48:56.1897909+07:00 0HMFFQ3P4J666:00000005 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.ReOrder (TeduCoreApp)" with arguments (["4", "1"]) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:48:56.2139205+07:00 0HMFFQ3P4J666:00000005 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:48:56.2384436+07:00 0HMFFQ3P4J666:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:48:56.2423803+07:00 0HMFFQ3P4J666:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:48:56.2470770+07:00 0HMFFQ3P4J666:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@p14='?', @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?', @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?', @p13='?', @p29='?', @p15='?', @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?', @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?', @p28='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;
+
+UPDATE [ProductCategories] SET [DateCreated] = @p15, [DateModified] = @p16, [Description] = @p17, [HomeFlag] = @p18, [HomeOrder] = @p19, [Image] = @p20, [Name] = @p21, [ParentId] = @p22, [SeoAlias] = @p23, [SeoDescription] = @p24, [SeoKeywords] = @p25, [SeoPageTitle] = @p26, [SortOrder] = @p27, [Status] = @p28
+WHERE [Id] = @p29;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-02-14T22:48:56.2504021+07:00 0HMFFQ3P4J666:00000005 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2022-02-14T22:48:56.2532331+07:00 0HMFFQ3P4J666:00000005 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.ReOrder (TeduCoreApp)" in 68.3838ms (afa2e885)
+2022-02-14T22:48:56.2781476+07:00 0HMFFQ3P4J666:00000005 [INF] Request finished in 79.5015ms 200  (791a596a)
+2022-02-14T22:49:04.1486666+07:00 0HMFFQ3P4J666:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:44366/Admin/ProductCategory/UpdateParentId application/x-www-form-urlencoded; charset=UTF-8 71 (ca22a1cb)
+2022-02-14T22:49:04.1524197+07:00 0HMFFQ3P4J666:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:49:04.1587353+07:00 0HMFFQ3P4J666:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:49:04.1650756+07:00 0HMFFQ3P4J666:00000006 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" with arguments (["2", "4", "System.Collections.Generic.Dictionary`2[System.Int32,System.Int32]"]) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:49:04.1704631+07:00 0HMFFQ3P4J666:00000006 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:49:04.1771758+07:00 0HMFFQ3P4J666:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:49:04.1838776+07:00 0HMFFQ3P4J666:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]" (0723d8ff)
+2022-02-14T22:49:04.1921889+07:00 0HMFFQ3P4J666:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=["@p14='?', @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?', @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?', @p13='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-02-14T22:49:04.2002824+07:00 0HMFFQ3P4J666:00000006 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2022-02-14T22:49:04.2259851+07:00 0HMFFQ3P4J666:00000006 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.UpdateParentId (TeduCoreApp)" in 47.813ms (afa2e885)
+2022-02-14T22:49:04.2337846+07:00 0HMFFQ3P4J666:00000006 [INF] Request finished in 83.5507ms 200  (791a596a)
+2022-02-14T22:49:08.7190266+07:00 0HMFFQ3P4J666:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:44366/Admin/ProductCategory/ReOrder application/x-www-form-urlencoded; charset=UTF-8 21 (ca22a1cb)
+2022-02-14T22:49:08.7230165+07:00 0HMFFQ3P4J666:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2022-02-14T22:49:08.7270440+07:00 0HMFFQ3P4J666:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2022-02-14T22:49:08.7308386+07:00 0HMFFQ3P4J666:00000007 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.ReOrder (TeduCoreApp)" with arguments (["2", "3"]) - ModelState is Valid (ba7f4ac2)
+2022-02-14T22:49:08.7341041+07:00 0HMFFQ3P4J666:00000007 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2022-02-14T22:49:08.7387592+07:00 0HMFFQ3P4J666:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:49:08.7430165+07:00 0HMFFQ3P4J666:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2022-02-14T22:49:08.7503217+07:00 0HMFFQ3P4J666:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@p14='?', @p0='?', @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?', @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?', @p13='?', @p29='?', @p15='?', @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?', @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?', @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?', @p28='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;
+
+UPDATE [ProductCategories] SET [DateCreated] = @p15, [DateModified] = @p16, [Description] = @p17, [HomeFlag] = @p18, [HomeOrder] = @p19, [Image] = @p20, [Name] = @p21, [ParentId] = @p22, [SeoAlias] = @p23, [SeoDescription] = @p24, [SeoKeywords] = @p25, [SeoPageTitle] = @p26, [SortOrder] = @p27, [Status] = @p28
+WHERE [Id] = @p29;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-02-14T22:49:08.7539642+07:00 0HMFFQ3P4J666:00000007 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2022-02-14T22:49:08.7574024+07:00 0HMFFQ3P4J666:00000007 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductCategoryController.ReOrder (TeduCoreApp)" in 30.8458ms (afa2e885)
+2022-02-14T22:49:08.7613376+07:00 0HMFFQ3P4J666:00000007 [INF] Request finished in 43.7517ms 200  (791a596a)
