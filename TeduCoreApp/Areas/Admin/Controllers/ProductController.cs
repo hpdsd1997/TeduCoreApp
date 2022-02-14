@@ -10,10 +10,12 @@ namespace TeduCoreApp.Areas.Admin.Controllers
     public class ProductController : BaseController
     {
         private IProductService _productService;
+        private IProductCategoryService _productCategoryService;
 
-        public ProductController(IProductService productService)
+        public ProductController(IProductService productService, IProductCategoryService productCategoryService)
         {
             _productService = productService;
+            _productCategoryService = productCategoryService;
         }
 
         public IActionResult Index()
@@ -30,7 +32,12 @@ namespace TeduCoreApp.Areas.Admin.Controllers
             return new OkObjectResult(model);
         }
 
-        #endregion AJAX API
+        [HttpGet]
+        public IActionResult GetAllCategories()
+        {
+            var model = _productCategoryService.GetAll();
+            return new OkObjectResult(model);
+        }
 
         [HttpGet]
         public IActionResult GetAllPaging(int? categoryId, string keyword, int page, int pageSize)
@@ -38,5 +45,7 @@ namespace TeduCoreApp.Areas.Admin.Controllers
             var model = _productService.GetAllPaging(categoryId, keyword, page, pageSize);
             return new OkObjectResult(model);
         }
+
+        #endregion AJAX API
     }
 }
