@@ -18,6 +18,7 @@
     <link href="~/lib/nprogress/nprogress.css" rel="stylesheet" />
     <!-- bootstrap-daterangepicker -->
     <link href="~/lib/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <link href="~/lib/notifyjs/dist/styles/metro/notify-metro.css" rel="stylesheet" />
     <!-- Custom Theme Style -->
     <link href="~/admin-side/css/custom.css" rel="stylesheet" />
     @RenderSection("Styles", required: false)
@@ -180,10 +181,16 @@
     <script src="~/lib/nprogress/nprogress.js"></script>
     <!-- Chart.js -->
     <script src="~/lib/mustache/mustache.js"></script>
+
     <script src="~/lib/Chart.js/dist/Chart.js"></script>
     <!-- jQuery Sparklines -->
     <script src="~/lib/twbs-pagination/jquery.twbsPagination.js"></script>
     <script src="~/lib/jquery-sparkline/dist/jquery.sparkline.js"></script>
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation/dist/additional-methods.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
     <!-- Flot -->
     @*<script src="../vendors/Flot/jquery.flot.js"></script>
         <script src="../vendors/Flot/jquery.flot.pie.js"></script>
@@ -200,8 +207,12 @@
     <!-- bootstrap-daterangepicker -->
     <script src="~/lib/moment/moment.js"></script>
     <script src="~/lib/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <!-- Custom Theme Scripts -->
+    <script src="~/lib/notifyjs/dist/notify.js"></script>
+    <script src="~/lib/notifyjs/dist/styles/metro/notify-metro.js"></script>
+    <script src="~/lib/bootbox/bootbox.js"></script>
+
     <script src="~/app/shared/tedu.js"></script>
+    <!-- Custom Theme Scripts -->
     <script src="~/admin-side/js/custom.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
